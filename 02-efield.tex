@@ -1,0 +1,75 @@
+% !TEX root = 5b-main.tex
+
+\chapter{Electric Fields and Potentials}
+
+\section{Purpose}
+This laboratory period will let you exercise your measuring and graphing skills by mapping the equipotential\sidenote{\textsc{Equipotential Lines} are the invisible lines that exist at constant voltage.  You will find them them in the experiment and then draw a representation of them on your graph paper.} lines that are formed between two parallel bars that are maintained at a voltage difference.  You should be able show a relationship between distance and voltage that will allow you to measure the electric field using Equation \ref{e:EandV}.
+
+\section{Preparation}
+Review Sections 17.7, 18.1 and 18.2.  Be sure that you understand the content of Section 18.3.  Working through Example 18.5 in your textbook will help you greatly in successfully accomplishing this laboratory.
+
+By re-arranging Equation 18.14 from your text, we can relate the electric field $E$ and change in the voltage potential $\Delta V$ as
+
+\begin{equation} \label{e:EandV} -E\cdot \Delta s = \Delta V \end{equation}
+where $\Delta s$ is the change in distance.
+
+\paragraph{Short quiz} Be prepared to take a short quiz at the beginning of lab related to the activities and the concepts of equipotential (constant voltage) lines and electric field lines.
+
+\section{General Information}
+
+This laboratory exercise simulates electrostatic fields produced by static charge distributions\sidenote{\textsc{Static charge distributions} are ones that do not change with time.}.  The situations discussed in the text and in class are for static distributions of charge.  Despite making the mathematics easier, it turns out to be extremely difficult to measure voltages in truly static situations.  
+
+To see why this is the case, imagine applying a constant voltage between two plates and measuring the voltages in between them in a tray of water.  In this case, $+$ and $-$ ions will physically move through the water, distorting your measurement.  One way to overcome this sort of difficulty is to use AC (alternating current), as we do in this exercise.  In this configuration, the electric field oscillates in a controlled manner and your voltmeter measures the \textit{amplitude} of the oscilation
+\begin{figure}
+	\includegraphics[width=0.85\linewidth]{ACVoltage.pdf}
+	\caption[AC Voltage Level]{What we measure in AC voltage is the Root Mean Squared (RMS) level of voltage between two points.  The DC voltage level oscillates about 0, peaking slightly higher than the AC level will show.  This means that you are measuring an \textit{average} voltage level that will smooth out some of the environmental effects that would be present in a DC measurement.}
+\end{figure}¥
+
+\section{Electric field lines and potentials}
+The diagram in Fig. \ref{f:fig1} shows the basic set up.  A transformer with a nominal output of 6.3 VAC is connected to two metal bars in a clear tray partially filled with water.  An AC voltmeter is used to measure voltages surrounding the bars (which simulate parallel metal plates with a static voltage or potential between them).  The common (GND) terminal of the AC voltage supply and the AC voltmeter are connected to the same plate.  A probe with a pointed metal tip is inserted into the water to measure voltages and to mark the plastic sheet at the bottom of the tray.  The general idea is to measure a voltage at some location and look for other locations that have the same voltage.  Doing so, you map out a number of equipotential lines parallel to the metal surface. The electric field lines will be perpendicular to the potential lines.
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.45]{5bgraf/Exp_2_Fields}
+	\caption{This simulation of charged plates allows you to map the electric potentials and determine the electric field between the plates.}
+	\label{f:fig1}
+\end{figure}
+
+\subsection{Activity: Parallel plates} %\label{s:plates}
+\begin{enumerate}
+	 \item Set up the two parallel bars as shown in Fig. \ref{f:fig1} to simulate the potentials and fields surrounding parallel plates.
+	 \item  Take data on a clear plastic sheet taped to the bottom of the tray.  Do this by finding locations of identical voltage and then press the AC voltmeter probe into the plastic to make an impression or \textit{dimple}\sidenote{Remember to look directly down at the plastic when dimpling.  Otherwise, refraction due to the water will distort your measurement.}.
+	 
+	 Make measurements of 5 separate equipotential lines, spaced evenly between the bars.  You should make enough dimples to accurately re-create the line on the sheet using a marker.  Be sure to capture the lines not just between the bars but also outside of the bars where the lines will begin to curve.  Remember to note the voltage levels you chose.
+\end{enumerate}
+	 \newthought{The dimples are not very visible under water} but once you have measured remove and dry the plastic sheet, the dimples will be easily seen.  
+\begin{enumerate}[resume]
+	 \item Use the provided marker pens to connect dots of equipotential (constant voltage), thereby determining equipotential lines.
+	  \item Draw electric field lines.  Recall that electric field lines will always cross the equipotential lines at a right angle.
+
+	 \item Calculate the value of the electric field at three (3) different locations between the plates and at one (1) location outside the plates, in the ``fringe'' area using Eq. \ref{e:EandV}.
+	\item Measure the distance between two adjacent equipotential lines \textbf{along} the electric field line.
+	\item Record your observations in your lab report.  Discuss with your lab partner and/or your instructor whether the equipotential and field lines have the shapes and behaviors you would expect for this geometry.
+	\item Be prepared to show your field plot to the class using the overhead projector and also to explain your observations and analysis to the class.
+\end{enumerate}
+
+\subsection{Activity: Circular Electrodes --- Dipole}
+Repeat steps 1-5 for two small round electrodes that simulate point charges. Calculate the value of the electric filed between two (2) distinct locations.
+
+\begin{marginfigure}[-20em]
+	\includegraphics[width=\linewidth]{Electric-dipole-field-lines.pdf}
+	\caption[Dipole Electric Field]{\textsc{Electric Field and Equipotential Lines} for the circular electrodes (dipole) configuration.  The dashed lines are equipotentials while the solid arrows represent the electric fields.  Your diagram should have voltage labels for the equipotential lines.}
+\end{marginfigure}
+\subsection{Activity: Other Configurations}
+Re-arrange the parallel plates into a different, non-parallel configuration or other configuration as suggested by your instructor.  You should ensure that the plates do not touch each other.  Repeat steps 1-5 for this configuration and calculate the electric field at two distinct locations.
+
+\section{Questions}
+\begin{enumerate}
+	 \item Explain three aspects of these measurements that contribute to experimental uncertainties.
+	 \item Include an estimate of how much uncertainty there is in the measurements of voltage and position and whether these resulted in a departure of your experimental results from expected outcomes.
+\end{enumerate}
+
+%\newpage
+%\includegraphics*[width=\textwidth,trim=120 80 80 120,clip]{5bgraf/pslabgrid} 
+
+\endinput

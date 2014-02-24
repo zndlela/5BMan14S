@@ -1,0 +1,173 @@
+% !TEX root = 5b-main.tex
+
+\chapter {DC Circuits Part I}
+
+\section{Purpose}  
+In this laboratory period, we will explore the effect of series and parallel connections on resistances and Electromotive Force (emf) voltages.  More importantly, you will practice the measurement and calculation of voltage, current, resistance, and power in circuits.
+
+\section{Preparation}  
+Review Chapter 19 of your textbook.  Pay special attention to Sections 19.3-19.5.  Be sure that you understand and can solve Examples 19.7 and 19.9 in your textbook.
+
+\section {Short quiz}  Be prepared to take a short quiz at the beginning of lab related to the concepts of series and parallel connections of resistors and emfs.
+
+\section{General Information}
+You will use three different methods to find resistance.  In the first you will simply use a color code to ``read'' the resistance value from the resistor markings. In the second method, you will the use an ohmmeter (one of the functions provided by a multimeter) to measure resistance directly.  In the third method you will use instruments to measure voltage across and current through a resistor, then calculate the resistance using Ohm's law --- this process is  referred to as ohm's method.
+
+\begin{equation} R = V/I \label{e:ohm} \end{equation}
+
+% \paragraph {You will calculate and measure the resistance of series and parallel connections of resistors.}  
+
+Within experimental uncertainties the ohmmeter readings and the ohm's law measurements should be consistent.  Your instructor will inform you what error analysis to perform and direct you regarding how to report your results.
+
+In series the total or equivalent resistance $R_S$ is 
+
+\begin{equation} \label{e:ser}
+	R_S  =  R_1  +  R_2  +  R_3  + \cdots	
+\end{equation}
+
+For resistors in parallel, the total or equivalent resistance $R_P$ is
+
+\begin{equation} \label{e:par}
+	%1/R_P  =  1/R_1  +  1/R_2  +  1/R_3  + \cdots
+	R_P  =  \left (1/R_1  +  1/R_2  +  1/R_3  + \cdots \right)\relax^{-1}
+\end{equation}
+
+\paragraph {Some resistors are marked with colored bands to indicate the resistance they had at the time of manufacture.}  Although reading the color code does not constitute a measurement of resistance which may have changed over time by usage, it is useful to see what the nominal resistance should be.  The first and second colored bands give the first and second digits of the resistance.  The third band gives the power of ten and the fourth band indicates the precision of the manufactured resistance:  5\% for gold and  10\% for silver.
+
+For example, if the bands are red, blue, green, and silver, the resistance is $26 \times 10^5\Omega\pm10$\%.
+%
+%\begin{table}
+%\caption{Resistor Color Code}
+%\centering
+%\begin{tabular}{l c l c}Color & \# & Color & \# \\
+%\hline
+%Black	&	0 &	Green	& 5\\
+%Brown	&	1 &	Blue	& 6\\
+%Red		&	2 &	Violet	& 7\\
+%Orange	&	3 &	Gray	& 8\\
+%Yellow	&	4 &	White	& 9\\
+%\end{tabular}
+%\end{table}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.85\linewidth]{resistor.pdf}
+	\caption[Resistor Color Chart]{\textsc{Resistor Color Coding} for 4- and 5-band resistors.  Note that many colors may look similar, especially after sitting in drawer for a few years.  The tolerance band may be determined by finding the band furthest from the rest---the rest of which should be evenly spaced.  Determine the approximate resistance by writing the three numbers from left to right and multiplying the combined value by the \textit{multiplier} band.}
+\end{figure}
+
+Your instructor will describe the operation of the instruments -- the multimeter, the voltmeter, and the ammeter. 
+\begin{quote}\hrule
+\textsc{Warning}:  Ammeters are used to measure current and are particularly vulnerable to damage.  Have your instructor check your connections before you measure current the first time to be certain that the meter is arranged correctly and will not be damaged. 
+\hrule
+\end{quote}
+
+%The multimeter has a very low resistance when measuring current---this allows the meter to be placed in series and not significantly change the resistance of the circuit.  The ammeter is placed in series so that it has the full current of the circuit branch passing through it.  This also makes the ammeter vulnerable to high currents and subsequent damage if it is connected directly to a voltage source.
+
+\section {Measuring resistance}
+These activities center on measuring resistance using three different methods. (1) Read the color code to get the value of a resistor. (2) Measure the resistor with an ohmmeter to get  its resistance value. (3) Measure voltage across and current through a resistor, then calculate the resistance value --- this process is  referred to as ohm's method.
+
+\begin{marginfigure}
+	\includegraphics[width=0.8\linewidth]{Ohmmeter.pdf}
+	\caption{\textsc{Measuring Resistance} of a single resistor using Method (2)}
+	\label{f:mohm}
+\end{marginfigure}
+
+\subsection{Activity: Ohm's Law} \label{s:ohmlaw}
+\begin{enumerate}
+	\item \label{l:mm} Determine the individual resistances of three different resistors using the multimeter as indicated in \fref{f:mohm}.
+	
+	\item \label{l:olm}Determine the resistances by the Ohm's law method in which applied voltage and current are measured and the resistance is calculated using \rref{e:ohm}.  The schematic in \fref{f:mamblock} indicates how to set up these measurements.
+
+	\item Make a table of the voltages and currents measured in item \ref{l:olm} and the resistances calculated from them.  Also list the measured values of resistance found directly with the multimeter from item \ref{l:mm} and those determined from the color code so that you can make side-by-side comparisons.
+
+	\item Estimate the percent uncertainties in the voltage and current measurements and calculate the percent uncertainty in the resistances found in item \ref{l:olm} with the Ohm's law method.  Do the resistances found by the three different methods for each resistor agree with one another within these experimental uncertainties? If not, discuss why they might disagree.
+	
+	%\item Find the percent difference between the values of resistance found in item \ref{l:olm} and measurement by ohm's law and color code values. Discuss whether the values agree within experimental uncertainties.  If not, discuss why they might disagree.
+	% This section can be confusing to read. Essentially, students are checking how direct measurement with an ohmmeter compares with current and voltage measurement followed by a calculation of resistance. This can also be compared with a direct rendering from the color code.
+\end{enumerate}
+\begin{marginfigure}
+	\includegraphics[width=0.8\linewidth]{AmmeterVoltmeter.pdf} 
+	\caption[Measuring Current and Voltage]{\textsc{Measuring Current and Voltage} of a single circuit.  The voltage drop measured should be equal to the voltage of the battery.  The current $I$ should be $I=V/R$ or voltage divided by resistance.\\[1em]\textsc{Important Note:} These diagrams are pictorial to assist you in setting up the lab.  In a true circuit diagram, the Ammeter and Voltmeter would be replaced by \tikz[baseline=-0.5ex]{ \node[draw,circle,inner sep=1pt] {A}; } and \tikz[baseline=-0.5ex]{ \node[draw,circle,inner sep=1pt] {V}; } symbols, respectively}
+	\label{f:mamblock}
+\end{marginfigure}
+
+
+\subsection{Activity: Resistances in Series} \label{s:series}
+\begin{enumerate}
+	\item \label{l:eqs} Determine the equivalent resistance of each resistor connected in series using the Ohm's law method. To do this measure the voltage across each resistor separately and the current through it. The current is the same through each resistor. The schematic in \fref{f:mamblock} shows the measurement of the voltage across and the current through a single resistor. Use \fref{f:resistor-series-par}. to measure the voltages and current for multiple resistors in series.
+	
+
+	\item Once you have measured the voltage and current for each resistor separately, calculate the equivalent series resistance $R_S$ using \rref{e:ohm}.
+	
+	\item Determine the experimental uncertainty in the value of $R_S$. %found in item \ref{l:eqs}.
+	
+	\item Calculate the equivalent resistance $R_S$ using (\rref{e:ser}) where the individual resistances are those found by the Ohm's law method. %in item \ref{l:olm}.
+\end{enumerate}
+
+\begin{marginfigure}
+	\centering
+	\includegraphics[width=0.75\linewidth]{SeriesandParallel.pdf}
+	\caption[Series and Parallel Resistors]{\textsc{Resistors in Series and Parallel} configurations.  The total resistance on the left is calculated using \rref{e:ser} while the resistance on the right is calculated using \rref{e:par}}
+	\label{f:resistor-series-par}
+\end{marginfigure}
+
+
+\subsection{Activity: Resistances in Parallel}
+\begin{enumerate}
+	\item Determine the equivalent resistance of three resistors connected in parallel using the Ohm's law method.  Again, review \fref{f:mamblock} to remind yourself how to measure voltage and current for a single resistor --- use \fref{f:resistor-series-par} for voltage and current measurements of multiple resistors in parallel.
+	
+	\item Calculate the equivalent resistance $R_P$ using \rref{e:ohm} where the individual resistances are those found by the Ohm's law method.
+
+	\item Once you have measured the voltage and current, calculate the equivalent parallel resistance $R_P$ using \rref{e:par}.
+	
+	\item Determine the experimental uncertainty in the value of $R_P$.
+\end{enumerate}
+
+%\begin{marginfigure}
+%	\includegraphics[width=0.75\linewidth]{BattVolt.pdf}
+%	\caption[Measuring Battery Voltage]{\textsc{Measurement of Battery Voltage} using a multimeter configured as a voltmeter}
+%\end{marginfigure}
+
+\subsection{Activity: EMFs in Series and Parallel}
+\begin{enumerate}
+	\item Measure the emfs of two individual dry cells and the total emfs when they are placed in series and in parallel as shown in \fref{f:vseriespar}.
+	
+	\item Explain the values obtained in the series and parallel connections.
+	
+	\item Do they agree with theory to within the experimental uncertainties?  If not, discuss some aspects of the experimental setup (such as internal resistance of the battery or contact resistance at the connection points) that could have altered your result.  Suggest another test that would verify your hypothesis.
+\end{enumerate}
+
+\begin{figure}
+	\centering
+	\begin{tikzpicture}
+	  \draw
+	    (0,0)node (bat1){} to [battery1, label=$E_1$,o-] ++(1,0)
+	    to [short] ++(0.25,0)
+	    to [battery1, label=$E_2$,-o] ++(1,0) node (bat2){}
+	    (0,2) to [battery1, label=$E_1$,o-] ++(1,0)
+	    to [short] ++(0.25,0)
+	    to [open,-o] ++(1,0)
+	    to [battery1, mirror,label=$E_2$]++(-1,0);
+	  \node[align=center]
+	    at ($(bat1)!0.5!(bat2) +(0,-1)$) {Series};
+	
+	  \draw
+	    (3,1) to[short,o-] ++(0.25,0) node (par1){}
+	    to[short] ++(0,1)
+	    to[battery1, label=$E_1$] ++(2,0)
+	    to[short] ++(0,-1) node(par2){}
+	    to[short,-o] ++(0.25,0)
+	    (par1) to[short] ++(0,-1) 
+	    to[battery1, label=$E_2$] ++(2,0)
+	    to[short] (par2);
+	  \node[align=center]
+	    at ($(par1)!0.5!(par2) +(0,-2)$) {Parallel};
+	\end{tikzpicture}
+%	\includegraphics[width=0.8\linewidth]{5bgraf/vseriespar} %{5bgraf/fig_7}
+	\caption{Battery configurations in series and parallel}
+	\label{f:vseriespar} %{f:fig7}
+\end{figure}
+\FloatBarrier
+
+\newpage
+\paragraph{If time permits}  Using a voltmeter, measure the voltage drops across each of the three resistors\sidenote{You can do this by connecting voltmeter probes to the legs of the resistor while it is connected in series} in the set-up on the left of \fref{f:resistor-series-par} and compare the sum of these with the terminal voltage of the dry cell.  Discuss the meaning of your results.

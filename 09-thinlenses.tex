@@ -1,0 +1,117 @@
+% !TEX root = 5b-main.tex
+\chapter{Thin Lenses and Their Images}
+
+\section{Purpose}
+  The purpose of these laboratory exercises is to give you hands-on experience with thin lenses and the images they form. In this lab, you will also determine the focal length of a lens, determine image distances and magnifications, and verify the thin lens equation.
+  
+
+\section{Preparation}
+Reread the sections in your text on thin lenses.  Pay particular attention to the technique of ray tracing and the application of the thin lens equations for image formation by lenses.  Become familiar with the three types of images that can be formed by a single thin lens and the conditions under which each type is formed.
+
+\paragraph{Short quiz}
+  Be prepared to take a short quiz at the beginning of lab related to the concepts associated with this laboratory exercise.
+
+\section{General Information}
+
+The technique of ray tracing is used to find the location and type of image formed by an optical system. In your text you will find several examples of ray tracing that are pertinent to this laboratory exercise. Figure \ref{f:fig17} shows a step-by-step illustration of ray tracing for a convex lens with an object at a distance greater than the focal length of the lens.  When ray tracing is performed carefully to scale it accurately predicts information about the size and location of images formed by optical instruments.
+
+The thin lens equations give the relationships of various quantities involved with thin lenses.  Note that the thin lens calculations produce results consistent with ray tracing and are in fact a numerical equivalent to the graphical techniques of ray tracing.
+
+\begin{figure*}
+	\hfill\includegraphics[width=0.9\textwidth]{LensImaging.pdf}
+	\caption[Ray Tracing Lens Image]{\textsc{Ray tracing} is used to locate the image formed by a lens.  In the case of a thin lens, $f_{1}=f_{2}$.}
+	\label{f:fig17}
+	\forceversofloat
+\end{figure*}
+
+The object, $s$ and image, $s^{\prime}$ distances are related to the lens focal length $f$ by the thin lens equation, while the magnification is related to the distances, and to the image ($y^{\prime}$) and object ($y$) heights.
+
+\begin{equation} \label{e:thin}
+	\frac{1}{s} + \frac{1}{s^{\prime}} = \frac{1}{f}
+\end{equation}
+and the lateral magnification $m$ is given by\marginnote[-2em]{\textsc{Note:} Other texts may use different notation for the image and object distances.  The notation here is chosen to be consistent with the Young and Geller textbook.}
+
+\begin{equation} \label{e:thinmag}
+	\frac{y^{\prime}}{y} = -\frac{s^{\prime}}{s} = m
+\end{equation}
+
+%\section{Activities}
+\section {Thin lenses}
+\subsection{Activity: Focal length of a convex lens}
+\begin{enumerate}
+	\item Determine the focal length $f$ of a convex lens by forming an image of a distant object.  The object should be something you can see out the lab window.\label{s:focal}
+	\item Explain your technique and estimate the uncertainty in your value for $f$.
+\end{enumerate}
+\begin{marginfigure}
+	\textsc{Your measurement table} should resemble this example:\\[1ex]
+	
+	\begin{sideways}
+	\begin{tabular}{l|l|l|l|l|l|l|l}
+		case&$s$ (cm)&$s^{\prime}$(cm)&$y$ (cm)&$y^{\prime}$(cm)&$m_{\textrm{exp}}$&$s^{\prime}_{\textrm{theory}}$&$m_{\textrm{theory}}$\\
+		\midrule\addlinespace[-2.25pt]
+		\phantom{x} & \phantom{x}& \phantom{x}& \phantom{x}& \phantom{x}& \phantom{x}& \phantom{x}\\
+		\midrule[0.1pt]\addlinespace[-2pt]
+		\phantom{x} & \phantom{x}& \phantom{x}& \phantom{x}& \phantom{x}& \phantom{x}& \phantom{x}\\
+		\midrule[0.1pt]\addlinespace[-2pt]
+		\phantom{x} & \phantom{x}& \phantom{x}& \phantom{x}& \phantom{x}& \phantom{x}& \phantom{x}\\
+		\midrule[0.1pt]\addlinespace[-2pt]
+		\phantom{x} & \phantom{x}& \phantom{x}& \phantom{x}& \phantom{x}& \phantom{x}& \phantom{x}\\
+		\midrule[0.1pt]\addlinespace[-2pt]
+		\phantom{x} & \phantom{x}& \phantom{x}& \phantom{x}& \phantom{x}& \phantom{x}& \phantom{x}
+	\end{tabular}
+	\end{sideways}
+		\hspace{6ex}
+\end{marginfigure}
+
+\subsection{Activity: Images formed by a single thin lens}\label{s:thinlens}
+\begin{enumerate}[resume]
+	\item Using the optical bench, the light source, and the frosted glass, find the image location experimentally for the six situations below. For the first five, use the converging lens whose focal length $f$ you measured in activity \ref{s:focal}. 
+	\item \label{item:cases}Make a table resembling the one on the right and record measurement values $s$, $s^{\prime}$, $y$ and $y^{\prime}$ for each of the following 4 cases:
+
+\begin{equation*}
+\begin{array}{llll}
+	\text{(i)} \quad s > 2f	& \text{(ii)} \quad s = 2f 
+	& \text{(iii)} \quad f < s < 2f &
+	\text{(iv)}\;\, s = f	%& \text{(v)} \quad s < f  %\;\, thick|thin space
+%	& \text{(vi) \quad any}\  s, \text{negative}\  f
+\end{array}
+\end{equation*}
+\end{enumerate}
+
+\subsection{Activity: Image location using thin lens equation}
+\begin{enumerate}[resume]
+	\item Using the thin lens equation and the measured values of $s$ and $f$, calculate the location of the image $s^{\prime}$ in each of the four situations. These values go into the $s^{\prime}_{\textrm{theory}}$ column above.
+	\item Using the calculated value of $s^{\prime}$, find the lateral magnification $m_{\textrm{exp}}$. Include these calculated values in $m_{\textrm{theory}}$ column in the table you made above. 
+	\item Discuss how well the calculated values match the corresponding measured values. 
+\end{enumerate}
+
+\subsection{Virtual Images}
+	Virtual Images are those formed by either by a lens with a negative focal length (concave) or by placing $s < f$.  In these cases, the image formed cannot be projected onto a screen as they are formed between the object and lens itself.  Your instructor may demonstrate a method of locating the position of the pin called the \textit{Parallax Method}.
+	
+	The second, coarser method is to estimate the magnification $m_{\textrm{est}}$ and compare this value with $m_{\textrm{theory}}$.
+\begin{enumerate}[resume]
+	\item Using your instructor's preferred method, calculate the focal length of diverging (convex) lens.
+\end{enumerate}
+
+\subsection{Activity: Ray tracing}
+\begin{enumerate}[resume]
+	\item For each of the situations explored above, draw ray diagrams approximately to scale. Use graph paper, ruler and a sharp pencil to get the best results. Discuss any trends you observe. 
+	\item Note the correspondence between the ray diagrams and the quantities measured in step \ref{item:cases}.
+\end{enumerate}
+
+\section{Conclusions}
+\begin{enumerate}
+\item What were the three types of images you observed that can be formed by a single lens? 
+\item Which of situations from question \ref{item:cases} produced real images?
+\item What is the condition for producing virtual images?
+\item Did any not produce an image at all?
+
+\end{enumerate}
+
+% Questions: State what happens to the image distance as the object distance moves toward the focal point. Assume the object starts at infinity. State what happens to image distance as the object distance moves closer to the lens surface. Assume the object starts at the focal point.
+
+% \clearpage
+%\newpage
+%\includegraphics*[width=\textwidth,trim=120 80 80 120,clip]{5bgraf/pslabgrid} 
+
+\endinput

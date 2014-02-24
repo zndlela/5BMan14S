@@ -1,0 +1,60 @@
+% !TEX root = 5b-main.tex
+\chapter{Interference and Diffraction}
+
+\section{Purpose}  The purpose of these laboratory exercises is to give you hands-on experience with interference and diffraction effects produced by a double slit.
+\section{Preparation}  Review Chapter 26 in your textbook, paying particular attention to Sections 26.1, 26.2 and 26.5.  Be sure that you are able to solve Examples 26.1, 26.2 and 26.6 in your textbook.
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.85\textwidth]{DoubleSlit1.pdf}
+	\caption[Young's Double Slit Experiment]{\textsc{Young's Double Slit Experiment} shows constructive and destructive interference at even spacings on a projection screen.  The constructive interference occurs where the wavefronts from both slits reach a maximum at the same point while the destructive interference occurs where one slit reaches a maximum and one a minimum, effectively canceling each other.  The formula shown in this figure is for constructive interference.\newline~ \newline\textsc{Note:} This figure is not to scale.  In reality, $d\ll R$.}
+	\label{f:fig18}
+\end{figure}
+
+\section{General Information}
+\fref{f:fig18} shows a schematic of the experimental set up for this laboratory exercise. There is a double slit at a distance $R$ from a screen.  When laser light is shown through the slit toward the screen a diffraction pattern will be observed.  Since the separation of the slits $d$ is relatively large compared to the wavelength  of the light used, there are a large number of bright dots where constructive interference occurs.  These are sometimes referred to as fringes.  Distance along the line of fringes is denoted by $y$. By using a little trigonometry and the small angle approximation, you find that the average distance between fringes under these circumstances is given by: 
+\begin{equation} \label{e:deltay}
+	y_{m} \approx R  \cdot \frac{m\,\lambda}{d}
+\end{equation}
+
+You will measure $y_{m}$, $R$, and $d$ and \rref{e:deltay} to calculate a value for the wavelength $\lambda$ of a Helium Neon or diode laser. By rearranging the equation above you get:
+\begin{equation} \label{e:lambda}
+	\lambda \approx d \cdot \frac{m\, y_{m}}{R}
+\end{equation}
+
+\section {Double slit interference}
+
+\subsection{Activity: Double Slit}
+% Measure $d$, the double slit separation 
+\begin{enumerate}
+	\item Your instructor will guide you in adjusting the traveling microscope.  Make at least two measurements of $d$ for each of the double slits you use.  Estimate and record the experimental uncertainty in $d$.
+	\item Also measure $a$, the width of the individual slits and their uncertainties.  You may use this value in the last part of today's lab.
+	\item Mount the laser and double slit so that a diffraction pattern is produced on a wall at least 4 meters away.  Measure the distance $R$ from the double slit to the wall as accurately as you can.  As usual, estimate and record the uncertainty in this distance.
+\end{enumerate}
+
+\subsection{Activity: Wavelength of Laser Light}
+% Record and measure the pattern of fringes
+\begin{enumerate}[resume]
+	 \item 	Place a piece of paper on the wall and record the location of as many fringes as possible.  Begin by locating the center fringe for $m=0$.  It should be the brightest fringe.
+	 \item Calculate $y_{m}$ for each fringe found.  Estimate the uncertainty in each of your values of $y_{m}$ by measuring the width of fringe center---this is the band of light that is all approximately at the same brightness---and dividing by two. 
+	 \item Use \rref{e:lambda} above to calculate the wavelength of light used in this exercise.  Which value of $y_{m}$ provides you with the lowest uncertainty in $\lambda$?
+	 \item Repeat the process for a second double slit having a different value of $d$.
+	 \item Compare your results with the actual value for $\lambda$
+	Calculate the percent difference between each of your experimental values for $\lambda$ and the actual value of 632.8 nm ($10^{-9}$m) for a HeNe laser. The value for a diode laser will differ slightly.
+	\item Determine if your experimental results agree with the actual value
+	Calculate the percent uncertainties in $y_{m}$, $R$, and $d$ based on your estimated uncertainties.  Add the percent uncertainties and see if they are greater than the percent difference between your experimental value and the actual value.  Discuss whether or not you have agreement.
+\end{enumerate}
+
+\section{Activity: Single slit diffraction}
+% Evidence of a single slit diffraction pattern in the double slit pattern
+	 
+	\begin{enumerate}[resume]
+	\item Describe the evidence for single slit diffraction observed in the double slit pattern. 
+	\item Consider that $a$, the width of a slit is substantially smaller than $d$, the separation between slits.  Thus you might find a \textit{dark} fringe from the single slit where you were expecting a light fringe from the double slit.  Do you observe this?
+	\item Sketch the fringe pattern peaks from the double-slit experiment and what you expect from the single slit on the same graph.  Sketch only to the first dark fringe of the single slit diffraction pattern.  You may refer to Figure 26.22 in your textbook for a rough guide of the single slit intensities.  
+	\end{enumerate}
+
+\section {Conclusions} What evidence did you see for the wave nature of light in today's experiment?  How well did your results agree with theoretical predictions?  What would you change in the experiment to obtain smaller uncertainties in your measurements?
+
+\endinput

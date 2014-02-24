@@ -1,0 +1,79 @@
+% !TEX root = 5b-main.tex
+
+\chapter {Nuclear Decay and Half-Life}
+
+\section {Purpose} In this lab, you will learn how to work with and measure three types of radiation.  You will learn the differences between each and their relative abilities to travel through material.  You will also measure the half-life of each.
+
+\section {Preparation}  You should read Chapter 30 in your textbook, paying particular attention to Section 30.3 and Section 30.4.  Be sure that you are able to solve Example 30.4.  
+
+\begin{quote}\hrule
+\textsc{Warning}:  \textbf{Do not eat or drink during this laboratory. Wash your hands after you leave the laboratory.} Although the radioactive sources are sealed, we will handle them only with tweezers and never touch the containers directly. Your instructor will explain the hazards of nuclear radiation and the proper procedures for radiation protection.
+\hrule
+\end{quote}
+
+\section {Statistical Measurements}  Unlike the measurements of scale that you are used to, in this lab we will be measuring discrete events.  Either the particle decays or it doesn't.  The chance of the decay occurring is random in time---provided we are measuring over a time period that is short compared to the half-life.  The probability of observing a number of events in a given amount of time is shaped like a bell-curve or, more accurately, a Poisson Distribution that is centered around $N_{0}$, the most probable value.
+
+\begin{marginfigure}
+	\includegraphics[width=0.95\textwidth]{poisson.pdf}
+	\caption[Poisson Distribution]{\textsc{The Poisson Distribution} shows the probability of observing a value $N$, if the true value is $N_{0}$.}
+\end{marginfigure}
+The distribution has a standard deviation of $\pm\sqrt{N_{0}}$.  So, if you observe $N$ decay events in a time $t$, the best estimate of your uncertainty on that measurement is $\pm\sqrt{N}$.
+
+It should be clear to you that if you observe a small number of counts, say 16 in a two minute period, your uncertainty is $16\pm4$ per 2 minutes or a 25\% statistical uncertainty.  But if you observe 3 times as long and see 3 times as many events, you would have $16\times3=48\pm7$ per 6 minutes.  Divide by three to get your 2 minute decay rate and you have $16\pm2.3$, a 15\% statistical uncertainty.
+
+Moral of the story:  More data will give you a lower uncertainty.
+
+\section {Nuclear decay}
+
+\subsection{Activity: Geiger counter}
+\begin{enumerate}
+	 \item Turn on the Geiger counter
+
+Adjust the counter to the voltage indicated on the tube at your station. Do not exceed the recommended value.
+
+	\item Determine background counting rate by allowing the counter to run for two minutes and recording the number of counts. Do this three times and average the number of counts.
+	\item What is the statistical uncertainty in each measurement?  Refer to your appendix in this manual on uncertainty calculations.
+	\item What is the statistical uncertainty on the combined 3 measurements?
+\end{enumerate}
+
+\subsection{Determine the ability of  $\alpha, \beta$, and $\gamma $ rays to penetrate materials}
+
+\begin{enumerate}[resume]
+
+	\item Measure the initial level of one source by running the Geiger counted without an absorber for two minutes.  Record the value and the uncertainty.\sidenote{\textsc{Note:} The $\alpha$ source emits better in one direction than in the other.  You should try both sides for a short interval to determine which is the preferential side before continuing your baseline measurement. } \label{step:geiger1}
+
+	\item Place absorbers between the source and Geiger counter.  What is the thinest absorber needed to reduce the radiation measured in a two-minute interval to background levels, within the combined uncertainty of your measurements? \label{step:geiger2}
+
+	\item Repeat steps \ref{step:geiger1} and \ref{step:geiger2} for the remaining two sources.
+	
+	\item Explain why of different types of radiation are able to penetrate materials to different depths.
+
+\end{enumerate}
+
+
+\subsection{Activity: Measuring the Half-Life of $\,^{115}In$}
+
+Your instructor will explain how the source is created and review the meaning of half-life.
+\begin{enumerate}[resume]
+	\item Place the radioactive source in the apparatus as you did the $\alpha, \beta$, and $\gamma$ sources earlier in the lab.
+
+	\item Count for at least 32 successive two-minute intervals, subtracting the average background contribution from each run.
+
+	\item Determine the half-life $\tau$ by either:
+	\begin{enumerate}
+	\item Finding the time required for the counting rate to decline to one half some earlier value. Since the actual half-life is 54 minutes, you should be able to do this for three or four of your early two-minute counts. Average your values and compare the result with the actual value.
+	\item Or plot your results as counts $N$ versus time $t$ in a computer program and fit the decay with an exponential function \[N=N_{0}\left(1-e^{-\lambda t}\right)\]  Allow the program to fit $N_{0}$ and $\lambda$.  The half-life $\tau$ will be $\tau=\ln2/\lambda$.  Ask your instructor for further details if you would like to use this method.
+	\end{enumerate} 
+	\item
+\end{enumerate}
+
+\section {Questions and Conclusions}
+Were you able to confirm the relative ability of $\alpha, \beta$, and $\gamma$ radiation to penetrate materials?
+
+Did you see evidence that the half-life does not depend on when you start counting? 
+
+Imagine that there are 1024 atoms of Indium in a sample.  Now, assuming that once the you get to less than 1 atom, the source is gone, on average how many half-lives will it take for the entire sample to be gone?
+
+There are roughly $10^{22}$ Indium atoms in the sample we used today ($10^{22}\approx2^{73}$).  Can you estimate how long, on average, it would take for the sample to be completely gone, using your calculated value for the half-life?
+
+\endinput

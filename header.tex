@@ -1,0 +1,78 @@
+%!TEX root = 5b-main.tex
+
+\IfFileExists{bergamo.sty}{\usepackage[osf]{bergamo}}{}% Bembo
+\IfFileExists{chantill.sty}{\usepackage{chantill}}{}% Gill Sans
+
+%%
+% For drawing nice pictures
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+%%
+% For circuit diagrams (some)
+\usepackage[siunitx]{circuitikz}
+
+%%
+% For Mathematic work
+\usepackage{amsmath}
+
+%%
+% For human readable calculations
+\usepackage{units}
+
+%%
+% For nicely typeset tabular material
+\usepackage{booktabs}
+
+%%
+% For resuming interrupted lists
+\usepackage{enumitem}
+
+%%
+% Use the textmode font for mathematics
+\usepackage[italic]{mathastext}
+
+%%
+% Rotate some of our floats
+\usepackage{rotating}
+
+%%
+% For graphics / images
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}{images/}}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+% Prints the month name (e.g., January) and the year (e.g., 2008)
+\newcommand{\monthyear}{%
+  \ifcase\month\or January\or February\or March\or April\or May\or June\or
+  July\or August\or September\or October\or November\or
+  December\fi\space\number\year
+}
+
+% Prints an epigraph and speaker in sans serif, all-caps type.
+\newcommand{\openepigraph}[2]{%
+  %\sffamily\fontsize{14}{16}\selectfont
+  \begin{fullwidth}
+  \sffamily\large
+  \begin{doublespace}
+  \noindent\allcaps{#1}\\% epigraph
+  \noindent\allcaps{#2}% author
+  \end{doublespace}
+  \end{fullwidth}
+}
+
+% Inserts a blank page
+\newcommand{\blankpage}{\newpage\hbox{}\thispagestyle{empty}\newpage}
+
+\newcommand{\degree}{\ensuremath{^{\circ}}}
+\newcommand{\slashfrac}[2]{\ensuremath{\left.#1\middle/#2\right.}}
+\newcommand{\rref}[1]{Eq. \ref{#1}}
+\newcommand{\fref}[1]{Fig. \ref{#1}}
+\newcommand{\tref}[1]{Tab. \ref{#1}}
+
+

@@ -1,0 +1,105 @@
+% !TEX root = 5b-main.tex
+\chapter{Reflection and Refraction}
+
+\section{Purpose}
+	In this laboratory exercise, you will practice applying the two fundamental laws of geometric optics: the law of reflection and the law of refraction.
+  The purpose of these laboratory exercises is to give you hands-on experience with the two basic laws of geometrical optics the laws of reflection and refraction. This lab continues the study of light, in particular the ray nature of light when light interacts with objects that are much larger than its wavelength.
+  
+\section{Preparation}
+Read Sections 23.7 and 23.8 in your textbook.  Ensure that you can solve Examples 23.6 and 23.8 dealing with refraction in a fishpond and reflection by two mirrors.  You will also need to read Section 24.2, and work through Example 24.1 on concave mirrors.
+
+\paragraph{Short quiz}
+  Be prepared to take a short quiz at the beginning of lab related to the concepts associated with this laboratory exercise.  This may cover topics such as Snell's Law, total internal reflection and the index of refraction.
+\section{General Information}
+
+\begin{quote}
+\hrule
+\textsc{Warning:}  Never look directly into a laser beam and do not point the beam toward another person.  The lasers used in this laboratory are considered to be safe for indirect exposure.  But shining the beam directly into an eye can cause short-term blindness.  Many lasers that are similar in appearance can cause much more serious, permanent injury.\\[-0.5em]
+
+\hrule
+\end{quote}
+  
+%We use lasers in this laboratory exercise because they produce a narrow beam of monochromatic light.  The path of the light can therefore be more accurately determined than with other light sources.  
+
+The path of light is a straight line until it interacts with an object.  When light encounters an object that is much larger than its wavelength---as will be the case in this laboratory exercise---its direction changes in accordance with the laws of reflection and refraction.
+ 
+To measure the direction of a ray of light produced by a laser we use the set up shown in fig. \ref{f:fig14}.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.9\textwidth]{5bgraf/Exp_8_Optical_bench}
+	\caption[Laser on an Optical Bench][4em]{\textsc{A laser mounted on an optical bench} provides an ideal method for testing ray-type optical effects because the beam is highly collimated, meaning it forms a straight line that is approximately the same size along its entire path.}
+	\label{f:fig14}
+	\forceversofloat
+\end{figure}
+
+An optical bench is used to provide firm support for the laser and the platform on which measurements are made.  Align the laser and platform so that the beam is parallel to the surface of the platform.  Place a cork pad on the platform and a sheet of paper on top of the cork.  
+
+By carefully placing a series of pins, you can trace the path of the laser beam.
+\marginnote{\textsc{Note}: the angles are measured relative to a line that is perpendicular to the surface at the point where the light ray meets the surface.  The perpendicular is shown as a dashed line in \fref{f:rfract}.  You can use a protractor to draw the perpendicular.  Your instructor will guide you in both determining the perpendicular and measuring relevant angles.}
+
+The law of reflection is particularly simple.  It is illustrated on the left in \fref{f:rfract}  The angle of incidence $\theta_i$ equals the angle of reflection $\theta_r$.  The law of refraction governs the direction of light rays when their speed changes, as in passing from one medium to another.  It is illustrated on the right in \fref{f:rfract}.  The equation for the law of refraction is called Snell's law and is written
+\begin {equation} \label{e:snell}
+n_1 \ \text{sin} \ \theta_1 = n_2 \ \text{sin} \ \theta_2
+\end {equation}
+
+where $n_1$ and $n_2$ are the indices of refraction for the media involved.  
+
+
+\begin{figure*} \centering
+	\includegraphics[width=0.4\textwidth]{5bgraf/Exp_8_Reflection}
+	\hfill
+	\includegraphics[width=0.4\textwidth]{5bgraf/Exp_8_Refraction}
+ \caption{Laws of Reflection and Refraction}\label{f:rfract}
+\end{figure*}
+\FloatBarrier
+
+\section{Geometric optics: ray model}
+
+\subsection{Activity: Reflection and Refraction}
+\begin{enumerate}
+% Verify the law of reflection
+	\item Use the front silvered mirror to verify the law of reflection.  Make measurements for three different angles of incidence.  Discuss whether the law is verified within experimental uncertainties.
+
+% Verify the law of refraction
+	\item Partially fill the pie box with water and a few granules of powdered milk.  Gently stir the water until the milk dissolves.  Trace a ray of light as it enters and leaves the pie box.  
+	\item Taking the index of refraction of water to be 1.33 and that of air to be 1.00, check to see if the law of refraction---\rref{e:snell}---is verified at both the entry and exit points.  
+	\item Discuss your results. Note that they were note affected by passing through the plastic of the container.  Can you think of a reason why this would be the case.  Can you think of an experiment that would allow you to test your hypothesis?
+\end{enumerate}
+	
+\subsection{Activity: Index of refraction of glass}
+\begin{enumerate}
+\item
+	Trace a ray of light through a glass block and measure the incident and exit angles of the ray.  Do this for 3 different angles between 15$^{\circ}$ and 75$^{\circ}$.
+	\item Assume that the index of refraction for air is 1.00. Use \rref{e:snell} to determine the index of refraction for the glass block.
+	\item Compare the value you obtain with the value in your textbook.  Come up with a hypothesis that can explain the discrepancy.  Can you think of a way to test your hypothesis?
+\end{enumerate}
+
+\subsection{Activity: Critical angle for a glass-air surface}
+\begin{enumerate}
+\item Pass the ray of light through a prism.  Gradually rotate the prism so that the ray leaving the other side comes out at progressively greater angles relative to the perpendicular to the surface.  
+	\item Determine the internal angle at which light no longer emerges.  Remember that the internal angle is different from the incident angle.
+	\item Calculate the critical angle using your measured values for the index of refraction and 
+\begin{equation} \label{e:critang}
+	\theta_c = \sin^{-1} \left(\frac{n_2}{n_1}\right) \text{where} \ n_1 > n_2
+\end{equation}
+	\item Compare your measured value of the critical angle with the calculated value from \rref{e:critang}.  Do they agree to within your uncertainties?  If not, what measurement could you make to resolve the differences?	
+\end{enumerate}
+
+\subsection{Activity: Focal point and length}
+We will use the curved metal mirror to verify that the focal length of such a mirror is one half its radius of curvature.
+\begin{enumerate}
+	 \item Measure the radius of curvature $R$ of the mirror by tracing its curve with a large compass.  
+	 \item Then, trace out 4 paths created by parallel incident rays.  Find the point at which they cross after being reflected.  This is the focal point. 
+	 \item Measure the distance of this point from the furthest point on the mirror.  This is the focal length $f$ of the mirror.  
+	 \item Discuss whether $f$ is half the radius of curvature $R$, as is predicted by the law of reflection.
+\end{enumerate}
+	
+\section{Conclusions}
+  What general conclusions can you make concerning the laws of reflection and refraction based on your experiences in this lab?
+ 
+% \clearpage
+%\newpage
+%\includegraphics*[width=\textwidth,trim=120 80 80 120,clip]{5bgraf/pslabgrid} 
+ 
+\endinput

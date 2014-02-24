@@ -1,0 +1,92 @@
+% !TEX root = 5b-main.tex
+\chapter{Magnetic Fields \& \newline Electromagnetic Induction}
+
+\section{Purpose}
+In this lab, we will explore the phenomenon of magnetism and electromagnetic induction.  As you might assume by the name, this refers to \textit{inducing} current flow by the presence of a magnetic field.  Electromagnetic induction is used by virtually every piece of electronic equipment with which you interact, from your cell phone to your computer to your microwave oven.  
+
+\begin{figure}[b!]
+	\centering	\label{f:rhr}
+%	\includegraphics[scale=0.6]{5bgraf/fig_11}
+	\includegraphics[width=0.85\textwidth]{RightHandRule2.pdf}
+	\caption[Right hand rule for magnetic fields]{\textsc{Right Hand Rule} for magnetic fields.  Align your right thumb with the direction of current.  Your fingers will curl in the direction of the magnetic field.}
+	\forcerectofloat
+\end{figure}
+
+\section{Preparation}
+This lab will cover a very useful and potentially interesting application of magnetic fields.  To prepare, you should be familiar with the concepts of a magnetic field and magnetic force that are introduced in Chapter 20.  Pay particular attention to Sections 20.2, 20.9 and 20.10.  Additionally, we will be applying specific concepts of magnetic fields.  These concepts are covered in 21.1, 21.3 and 21.4.  Practicing Examples 21.3 and 21.6 will ensure that you are prepared for this lab.
+
+\paragraph{Pre-lab Assignment}
+Suppose the current in the Primary coil is increasing in \fref{f:induction-galvanometer}.  Explain the direction of the current induced in the Secondary coil using Faraday's law, Lenz's law, and the Right Hand Rule.  You may be asked to turn in your explanation at the beginning of class as a short preparatory assignment.
+
+
+\begin{figure*}
+	\vspace{2em}
+	\centering	\label{f:induction-galvanometer}
+	\includegraphics[width=0.9\linewidth]{Inductance1.pdf}
+	\caption[Electromagnetic Induction][2em]{\textsc{Electromagnetic Induction} allows current inducted in the primary circuit to generate current in the secondary.  The direction of current in the secondary will depend on whether the magnetic field is increasing or decreasing in strength. \newline~ \newline A \textsc{Galvanometer} is a type of ammeter that measures current direction and strength}
+\end{figure*}
+
+
+
+\section{Experimental Set-Up}
+You will use two coils in a series of activities.  These are shown in \fref{f:induction-galvanometer} as one of the configurations you will explore.  The primary coil is the one that you connect to a battery and switch.  The secondary coil is the one you connect to a galvanometer.  Current into the + terminal of the galvanometer will move the arrow to the right while current into the - terminal will move the arrow to the left.  The size of the arrow's movement indicates the amount of current flowing.
+
+
+%\begin{figure}
+%	\centering
+%	\includegraphics[scale=0.6]{5bgraf/Exp_6_Induction}
+%	\caption{Primary and secondary coils illustrate Lenz's law}
+%	\label{f:fig13}
+%\end{figure}
+
+
+\section{Exploring Magnetic Fields and Induction}
+
+\subsection{Activity: Magnetic Field from Current-Carrying Wires}
+% Verification of RHR-2
+\begin{enumerate}
+	 \item 	Use the primary coil and the small compasses to verify the \textsc{Right Hand Rule for Magnetic Fields}.  To do this, recall first that current will flow from the positive terminal of the battery to the negative.  Using this fact, determine first the direction of current you expect in the coil and then refer to \fref{f:rhr} to determine the direction of the magnetic field.  The compass will align with the north end pointed in the direction of the magnetic field.
+	 \item 	Explore the direction of the field inside and outside of the coil first for current flowing in one direction and again for current flowing in the opposite direction.
+	 \item 	Make drawings that indicate the direction of current and magnetic field in both cases.  Explain how the direction of the field is consistent with the right hand rule.
+	 \item How does the strength of the magnetic field induced by current through the primary coil compare with the magnetic fields present in the room?  Can you detect the presence of the Earth's magnetic field?
+\end{enumerate}
+
+\subsection{Activity: Induced emf by a Coil} \label{s:coilind}
+% Emf $E$ induced in the secondary coil by the primary coil
+	Line up the primary and secondary coils in an arrangement similar to \fref{f:induction-galvanometer} above with the primary coil connected to the battery and switch and the secondary coil connected to the galvanometer.  
+	
+	By assembling them on the shared wooden rod, you will ensure that they are coaxial. Be certain that the windings of both coils are in the same direction: that is, both clockwise or both counterclockwise. 
+	
+	Explain all observations by making drawings and using Faraday's law\sidenote[][-6em]{\textsc{Faraday's Law of Induction}: The magnitude of the induced emf  $\varepsilon$ in a circuit is the absolute value of the change in magnetic flux.\[{\Huge\varepsilon}=\left|\frac{\Delta\Phi_{\textrm{B}}}{\Delta t}\right|\]}, Lenz's law\sidenote[][2em]{\textsc{Lenz's Law}: The magnetically-induced emf will be directed such that the newly induced magnetic field cancels the change that induced it.} , and the Right Hand Rule.
+\begin{enumerate}[resume]
+	 \item Open and close the switch.  What direction does the galvanometer deflect?  Does it show a deflection at all times?  
+	\item Close the switch and leave it closed.  Move the secondary away from the primary and bring it back.  Perform this step, moving the secondary at different speeds.  What dependence on speed do you notice?  What effect can explain this?
+	\item Repeat step 5, but this time, leave the secondary coil in place and move the primary coil away and then bring it back.  What differences, if any, do you notice?
+	\item Use an iron rod to link the primary and secondary coils instead of the wood rod.  Starting with the coils separated by 10 cm, open and close the switch to the primary.  Record the relative magnitude of the deflection of the galvanometer then decrease the separation of the coils to 9 cm, then 8 cm, and so on.  Make a graph of the galvanometer deflection versus distance between the coils. 
+\end{enumerate}
+
+
+\subsection{Activity: Induced emf by a Magnet}
+
+
+\begin{marginfigure}
+	\label{fig:mag-inductance}
+	\includegraphics{Inductance2.pdf}
+	\caption[Magnet Inductance]{\textsc{Inductance with Magnet} shows how a permanent magnetic field in the magnet can induce current in the metal coil.}
+\end{marginfigure}
+
+\begin{enumerate}[resume]
+	 \item First verify with a compass that the bar magnet has its poles correctly labeled.  Do this by using your compass.  The North arrow on the compass will point toward the South end of the magnet and away from the North end.
+	\item  Remove the primary coil and keep the secondary coil connected to the galvanometer.  Move the north pole of the bar magnet into the core of the secondary coil.  Then pull it out.  Repeat with the south pole of the bar magnet.  Examine the effect of the speed of the motion.  
+	\item Explain your observations by making drawings that show the coil, current direction and magnetic field direction.  Show that your observations are consistent with Faraday's law, Lenz's law, and the Right Hand Rule.
+	\item Since you learned last section that energy is conserved, where does the current in the coil come from?  Hint: not the magnet.
+\end{enumerate}
+
+\section{Conclusions}
+If you wanted to continuous current in one of the coils (so that the galvanometer stays on one side or the other), can you think of a way to do that with the magnet and coils from today's experiment?  What types of energy (potential energy, thermal energy, etc) could you use in this manner to generate electricity?
+ 
+% \clearpage
+%\newpage
+%\includegraphics*[width=\textwidth,trim=120 80 80 120,clip]{5bgraf/pslabgrid} 
+
+\endinput

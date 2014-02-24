@@ -1,0 +1,171 @@
+% !TEX root = 5b-main.tex
+
+\chapter{Using Uncertainty}
+
+In this section, we will hopefully clarify some ambiguities in the way we propagate uncertainty in our data. There are just two simple rules but we will need to be cautious about how we apply them.
+
+\section{Measuring Uncertainty}
+To ascertain the uncertainty in a measurement, you must determine the accuracy of the measuring \textit{device} and the precision of the phenomenon you are measuring.  Much of the scientific endeavor is concerned with quantifying and reducing the uncertainty in measurement!  Uncertainty is inevitable and is not a sign of failure.  Accurately quantifying the uncertainty can give you important insights into your measurements and the physical basis behind them.
+
+\subsection{The Ruler}
+\textsc{The Ruler} will form a basic measuring device you use frequently.  But rulers only have markings of a certain distance.  Between these markings we have no guide as to how accurate we are.
+
+\begin{figure}
+	\includegraphics[width=0.9\textwidth]{ruler.pdf}
+	\caption[Measuring using a Ruler]{The ruler markings will be spaced evenly such that you measurement generally falls between two marks}
+	\label{fig:ruler}
+\end{figure}
+
+In \fref{fig:ruler}, you see that we are measuring a length that falls between 11.4 and 11.6.  In this case, we will take half of the interval length as our uncertainty and place the measurement value \textit{halfway} between 11.4 and 11.6.  Assuming that this is a metric ruler with centimeter markings, our length measurement is:
+
+\begin{equation*}
+	\textrm{length}=(11.5\pm0.1)\textrm{cm}
+\end{equation*}
+
+\subsection{The 2/3 Estimate}
+For many experiments, you will not have a single factor that you must measure.  In these cases, repeating the experiment can give you a method of determining both the \textit{expected value} and the uncertainty on that expectation.
+
+We will assume that the errors are random in this approximation, which is typically a valid assumption, provided your experiment is properly calibrated.  The values you record will tend to cluster around a mean.  Assuming a random event, we say that the distribution is \textit{normal} or Gaussian.  
+
+For a normal distribution, roughly 2/3 of total number of measurements will lie within the uncertainty on your average value.
+
+\newthought{Take the example of measuring 6 values} from one of the experiments:
+\begin{equation*}
+	9,\quad9.8,\quad10.1,\quad10.2,\quad10.3,\quad11
+\end{equation*}
+
+The average value is 10.1.  We want to include 2/3 of the values for this measurement set.  Since we have 6 measurements, we will include 4.  They will be the 4 values closest to the average of 10.1.  Thus the group from 9.8-10.3 is the smallest set of 4 measurements.  
+
+The uncertainty is the difference between the average value and the measurement furthest from the average.  So our uncertainty is $\left|10.1-9.8\right|=0.3$.  Thus our full measurement with uncertainty is
+\begin{equation*}
+	10.1\pm0.3
+\end{equation*}
+
+This estimate of the uncertainty is rough but is sufficiently accurate to provide you with some insight that will allow you to compare the accuracy of different measurement techniques throughout this course.
+
+\section{Combining Uncertainties in Calculations}
+
+\marginnote{\textsc{Important Approximation 1}: In reality, independent measurements will have uncertainties that add in quadrature.  That is you take the square root of the sum of their squares.  By adding the uncertainties linearly as we show here, you will \textit{overestimate} your uncertainty.}
+
+\marginnote{\textsc{Important Approximation 2}:\newline Additionally, we will drop terms that multiply two small values.  Thus $\Delta A + \Delta B +(\Delta A\cdot\Delta B)\approx\Delta A + \Delta B$.  This is only valid for small values of $\Delta A\ll1$ and $\Delta B\ll1$}  
+
+	\subsection{Addition and Subtraction:}
+
+		When we add or subtract two values, we add their associated absolute uncertainties.
+
+	\subsection{Multiplication and Division:}
+
+		When we multiply or divide two numbers, we add their associated relative uncertainties. 
+
+\section{Some Examples}
+	\begin{eqnarray*}
+		\left(A \pm \Delta A\right)+\left(B \pm \Delta B\right)&=&\left(A+B\right) \pm \left(\Delta A + \Delta B\right)
+	\end{eqnarray*}
+	
+	\begin{eqnarray*}
+		\left(A \pm \Delta A\right) \times \left(B \pm \Delta B\right)&=&
+			\left[A \times \left(1 \pm \frac{\Delta A}{A}\right)\right] \times 
+			\left[B \times \left(1 \pm \frac{\Delta B}{B}\right)\right]\\
+		&=&\left(AB\right)\times\left[1 \pm \left(\frac{\Delta A}{A}+
+			\frac{\Delta B}{B}\right)\right]\\
+		&=&\left(AB\right) \pm\left(\left(AB\right)\times \left(\frac{\Delta A}{A}+
+			\frac{\Delta B}{B}\right)\right)
+	\end {eqnarray*}
+	\begin{eqnarray*}
+		\frac{\left(A \pm \Delta A\right)}{\left(B \pm \Delta B\right)}&=&
+			\frac{\left[A \times \left(1 \pm \frac{\Delta A}{A}\right)\right]}{\left[B \times 
+			\left(1 \pm \frac{\Delta B}{B}\right)\right]}\\
+		&=&\left(\frac{A}{B}\right)\times\left[1 \pm \left(\frac{\Delta A}{A}+\frac{\Delta B}{B}\right)\right]\\
+		&=&\left(\frac{A}{B}\right) \pm\left[\left(\frac{A}{B}\right)\times 
+			\left(\frac{\Delta A}{A}+\frac{\Delta B}{B}\right)\right]
+	\end {eqnarray*}
+	
+\section{Corollaries}
+	\subsection{Operations with Constants:}
+	
+		Constants have no uncertainty. Thus, for some constant C, we say
+			\begin{eqnarray*} \Delta C = 0 
+			\end{eqnarray*}
+			
+		We treat C as any other value, and then make the above substitution.  A note here that constants refer to numerical factors and \textbf{not} physical constants.
+	\subsection{Physical Constants:}
+		When you are given a physical constant (such as gravity), there is inherent uncertainty in how you choose to express it.  Thus, if you say
+		\begin{eqnarray*} g = 9.8 {\rm~m}/{\rm s}^{2}
+		\end{eqnarray*}
+		There is uncertainty in the second decimal place because we have chosen not to express 
+		the precision.  You would express the value for gravity as
+		\begin{eqnarray*}g\pm \Delta g = \left(9.80 \pm 0.05\right)  {\rm~m}/{\rm s}^{2}
+		\end{eqnarray*}
+		
+	\subsection{Powers:}
+	
+		We can think of taking a value to some power p as multiplying that value by itself p number of times. Recall that when multiplying values, the relative uncertainties add. So, the relative uncertainty is added with itself p times. Hence, the relative uncertainty is simply multiplied by the power p. This corollary holds, by analogy, for fractional powers (such as the square root) as well.
+		
+		\begin{eqnarray*} 
+			\left(A \pm \Delta A\right)^p&=&\left[A \times \left(1 \pm \frac{\Delta A}{A}\right)\right]^p\\&=& A^p \times \left[1 \pm p\times \left(\frac{\Delta A}{A}\right)\right]
+		\end{eqnarray*}
+	
+	\subsection{Trigonometric Functions:}
+		Uncertainty in trigonometric functions such as \textit{SIN}, \textit{COS} and \textit{TAN} and their inverses is more difficult.  We will present a number of different ways to approach this.  You can select the method that is most conducive to solving the problem at hand.
+		\begin{marginfigure}
+		\centerline{\includegraphics[width=0.9\textwidth]{triangle.pdf}}
+		\caption{Right Triangle}\label{fig:triangle}
+		\end{marginfigure}
+		
+		\newthought{	If you can define a triangle} similar to the one depicted in Figure \ref{fig:triangle}, then you can calculate the uncertainty in $\sin\left(\theta\right)$, $\cos\left(\theta\right)$ and $\tan\left(\theta\right)$ by using the formulae:
+		\begin{eqnarray*}
+			\sin\left(\theta\right)&=&\frac{B\pm\Delta{B}}{C\pm\Delta{C}}\\
+			\cos\left(\theta\right)&=&\frac{A\pm\Delta{A}}{C\pm\Delta{C}}\\
+			\tan\left(\theta\right)&=&\frac{B\pm\Delta{B}}{A\pm\Delta{A}}
+		\end{eqnarray*}
+		The limitation of this method is that it will only work if you already know the length of the triangle legs.
+
+		\newthought{The second method} you can use is more computationally intensive but is easy to apply and works with angles expressed in either radians or degrees.  If you have an angle $\theta\pm\Delta\theta$, then $\Delta\sin\left(\theta\right)$ can be calculated by plugging in the value for the upper (or lower) limit of your $\theta$ uncertainty and subtracting the mean value.
+		\begin{eqnarray*}
+			\sin\left(\theta\right) \pm\Delta\sin\left(\theta\right) &=&\sin\left(\theta\right) \pm\left[\sin\left(\theta+\Delta\theta\right)-\sin\left(\theta\right)\right]
+		\end{eqnarray*}
+		While this method can be used to quickly check your uncertainty in an angle, it fails miserably when attempting to derive general expressions for the uncertainty of a trigonometric function.  With multiple propagations, you will quickly end up getting swamped in a sea of sins and coses.  To derive general expressions, we need to use the third, general method.
+
+		\newthought{If you want to create a general expression} for your uncertainty using trigonometric functions, there is one method that works in all cases.  This method has, however, a caveat: It only works with radians (not degrees)!  To convert between radians and degrees, remember:
+		\begin{eqnarray*}
+			1^{\circ}&=&\frac{360^{\circ}}{2\pi}\\
+			1 rad&=&\frac{2\pi}{360^{\circ}}
+		\end{eqnarray*}
+		With this in mind, we propagate the uncertainty $\theta\pm\Delta{\theta}$ through trigonometric functions as:
+		 \begin{eqnarray*}
+		 	\sin\left(\theta\pm\Delta\theta\right)&=&\sin\left(\theta\right)\pm\cos\left(\theta\right)*\Delta\theta\\
+			\cos\left(\theta\pm\Delta\theta\right)&=&\cos\left(\theta\right)\pm\sin\left(\theta\right)*\Delta\theta\\
+			\tan\left(\theta\pm\Delta\theta\right)&=&\tan\left(\theta\right)\pm\sec\left(\theta\right)^{2}*\Delta\theta\\
+			\arcsin\left(x\pm\Delta x\right)&=&\arcsin\left(x\right)\pm\frac{\Delta{x}}{\sqrt{1-x^{2}}}\\
+			\arccos\left(x\pm\Delta x\right)&=&\arccos\left(x\right)\pm\frac{\Delta{x}}{\sqrt{1-x^{2}}}\\
+			\arctan\left(x\pm\Delta x\right)&=&\arctan\left(x\right)\pm\frac{\Delta x}{1+x^{2}}		\end{eqnarray*}
+		Finally, related examples are the exponential and natural logarithmic functions.
+		\begin{eqnarray*}
+			e^{\theta\pm\Delta\theta}&=&e^{\theta}\pm e^{\theta}*\Delta\theta\\
+			\ln{x\pm\Delta x}&=&\ln{x}\pm\frac{\Delta x}{x}
+		\end{eqnarray*}
+\section{The Exception}
+
+	When the same value is used in multiple places in the same equation, we have to be careful. The way we have defined our rules, we cannot divide a value (with an associated non-zero uncertainty) by itself. This becomes clear once we realize that we must require
+	
+	\begin{eqnarray*}
+		\frac{B \pm \Delta B}{B \pm \Delta B}&\equiv&1
+	\end{eqnarray*}
+	
+	However, we could also treat this like the third example above, only with A=B
+	
+	\begin{eqnarray*}
+		\frac{\left(B \pm \Delta B\right)}{\left(B \pm \Delta B\right)}&=&\frac{\left(B \times \left(1 \pm \frac{\Delta B}{B}\right)\right)}{\left(B \times \left(1 \pm \frac{\Delta B}{B}\right)\right)}\\&=&\left(\frac{B}{B}\right)\times\left(1 \pm \left(\frac{\Delta B}{B}+\frac{\Delta B}{B}\right)\right)\\&=&\left(\frac{B}{B}\right)\times\left(1 \pm \left(2\times\frac{\Delta B}{B}\right)\right)\\&=&1 \pm \left(2\times\frac{\Delta B}{B}\right)\\&\neq&1
+	\end {eqnarray*}
+	
+	By analogy, we see that we must be careful to treat any case where a value is repeated in the numerator and denominator in this way.  Otherwise, we will incorrectly count the same uncertainty twice.
+	
+\section{More Examples}	
+	\begin{eqnarray*}
+		\frac{1}{A \pm \Delta A}+\frac{1}{B\pm\Delta B}&=&\frac{1}{A\times\left(1\pm \frac{\Delta A}{A}\right)}+\frac{1}{B\times \left(1\pm \frac{\Delta B}{B}\right)}\\ &=&\frac{1}{A}\times\left(1\pm \frac{\Delta A}{A}\right)+\frac{1}{B}\times \left(1\pm \frac{\Delta B}{B}\right)\\ &=& \left(\frac{1}{A}\pm \frac{\Delta A}{A^2}\right)+\left(\frac{1}{B}\pm \frac{\Delta B}{B^2}\right)\\ &=&\left(\frac{1}{A}+\frac{1}{B}\right)\pm \left(\frac{\Delta A}{A^2}+\frac{\Delta B}{B^2}\right)\\
+	\end{eqnarray*}
+
+%	N.B. The above calculation could have been carried out by first finding a common denominator, and then propagating the uncertainty. However, the same values would then be repeated in the numerator and denominator, and hence the uncertainty will be double counted. Thus, the method employed above must be used (which is, quite luckily, the easiest way of doing it). 
+	
+	
+\end{document}  

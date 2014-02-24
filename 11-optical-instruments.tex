@@ -1,0 +1,153 @@
+% !TEX root = 5b-main.tex
+\chapter{Optical Instruments}
+
+\section{Objective}
+In this lab, you will learn how to use a system of lenses to build a refracting telescope and a compound microscope, applying the principles of angular and lateral magnification.  You will learn how to characterize converging lenses by measuring their focal lengths and how to estimate magnification of an image.
+
+\section{The Eyepiece} For this experiment the eyepiece will consist of a single converging lens which we will call a ``simple magnifier'' The simple magnifier magnifies an object by creating a virtual image which subtends a larger angle at the eye than the original object.
+
+\begin{figure} %{wrapfigure}[8]{r}[30pt]{3cm}	
+  \centering
+  \includegraphics[width=0.9\textwidth]{SimpleMagnifier.pdf}
+  \caption[Simple Magnifying Lens]{\textsc{A Simple Magnifier} produces an upright, virtual image with a larger apparent size than the object.  \textit{Bottom:} The object viewed using the unaided eye.  The near focus point $N$ for a human eye is approximately 25cm.  \textit{Top:} With a magnifying lens, the object's image is larger, subtending $\theta^{\prime}>\theta$.  Note that the image (on the left) will be largest if we place the object at the focal length $f$.  In this case, the lines from the eye to the image will be parallel and the image will exist at infinite distance.}
+  \label{f:mag}
+\end{figure} %{wrapfigure}
+
+
+This results in a larger image on the retina, hence the object ``appears'' larger. The amount the object appears to be larger is defined by the angular magnification or magnifying power of the lens.
+
+For a normal eye (the near point, N = 25 cm), the angular magnification\sidenote{\textsc{Note:} this is distinct from the \textit{lateral magnification} discussed in the last lab.  We will use $M$ to denote an angular magnification and $m$ to denote lateral magnification.} is the ratio of $\theta^{\prime}$ to $\theta$  The height $y$ and distance $N$ form legs of a right triangle.  If $N\gg y$, then we approximate the angles $\theta$ and $\theta^{\prime}$ by their tangents as
+\begin{equation}
+\begin{aligned}
+	\tan\theta&=\frac{y}{N}\approx\theta\\
+	\tan\theta^{\prime}&=\frac{y}{f_{2}}\approx\theta^{\prime}
+\end{aligned}
+\label{eq:mag-approx}
+\end{equation}
+Thus, the angular magnification at the focal length is
+
+% alignment with the alignedat environment. fractions are larger
+\begin{equation}\label{e:mag}
+	M =\frac{\theta^{\prime}}{\theta}=\frac{y/25\textrm{cm}}{y/f_{2}}=\frac{25\textrm{cm}}{f_{2}}
+\end{equation}
+
+
+$f_2$ = focal length of the simple magnifier eyepiece
+
+\marginnote[-8em]{\textsc{Note:} Images formed by the eyepiece are virtual and upright, hence a simple magnifier can be used for reading purposes.}
+
+\section{The Refracting Astronomical Telescope}
+A simple Keplarian, refracting telescope is illustrated in fig. \ref{f:tscope}
+
+\begin{figure*}
+  \hfill
+  \includegraphics[width=0.9\textwidth]{RefractingTelescope.pdf}
+  \caption[Keplerian Refracting Telescope]{\textsc{Refracting telescope} with the the object and image projected over each other on the left.  The main lens has a focal length of $f_{1}$ while the eyepiece has a focal length of $f_{2}$}
+  \label{f:tscope}
+  \forceversofloat
+\end{figure*}
+
+The features of this device are outlined as follows:
+\begin{enumerate}
+	\item The object is considered to be at infinity (very large distance). 
+	\item The objective lens of focal length $f_1$ is of relatively large focal length.	
+	\item The objective lens is a positive or converging lens.
+	\item The objective lens forms a real, inverted image, which is then examined with the aid of the eyepiece lens, of focal length $f_2$. 
+	\item The eyepiece lens is usually a short focal length lens.
+	\item The eyepiece is then used to form a virtual image, at either the near point of the eye, or at infinity.
+\end{enumerate}
+
+Using trigonometric approximations from \rref{eq:mag-approx}, you can confirm that the total magnifying power of this telescope is:
+\begin{equation}\label{e:tscope}
+	M \simeq -\,\frac{f_1}{f_2}
+\end{equation}
+where the minus sign indicates that the image is `inverted'. It is assumed that the final image is at infinity.
+
+\section{The Compound Microscope}
+
+\begin{marginfigure}
+  \includegraphics[width=0.95\linewidth]{Microscope.pdf}
+  \caption[Compound Microscope]{\textsc{A Simple Compound Microscope} has focal lengths that do not meet between eyepiece and objective.  The focal point also exists at a fixed distance beyond the objective, rather than at infinity as in \fref{f:tscope}}
+  \label{f:mscope}
+\end{marginfigure}
+
+The features of the Simple, Compound Microscope illustrated in \fref{f:mscope} are:
+\begin{enumerate}
+	\item The object is located close to, but just outside the focal point of the objective lens.
+	\item The objective lens is a short focal length lens.
+	\item The objective lens is a positive or converging lens. 
+	\item The lateral magnification of the objective lens is
+	\begin{equation}
+		m = \frac{s^{\prime}_{1}}{s_{1}}=\frac{L-f_2 }{s_{1}}\approx \frac{L-f_{2}}{f_1}
+		\label{e:objective-mag}
+	\end{equation}
+	where $s_{1}$ is the object distance.
+\end{enumerate}
+
+Thus, combining \rref{e:mag} with \rref{e:objective-mag}, the total magnification of the microscope is
+\begin{equation} \label{e:mscope}
+	M_{\textrm{microscope}} = m \times M = \frac{L-f_{2}}{f_1}\times\frac{25\textrm{cm}}{f_2}
+\end{equation}
+
+\begin{quote}\hrule
+\textsc{Important:} The total magnification is the angular magnification multiplied by the lateral magnification.  This is a convenient definition for microscopes as we are most often concerned about the magnification for very, very small distances, thus the angular and lateral magnifications are approximately the same.\\[-0.5em]
+\hrule
+\end{quote}
+
+\section{Building Optical Instruments}
+\subsection{Activity: Find the focal lengths}
+\begin{enumerate}
+	\item You have been provided with three lenses of different focal lengths.  Hold each lens up to a bright distant source of light (room lights out, focusing upon a distant object outdoors), and focus an image on the frosted glass.  You may wish to affix a piece of white paper to the front. 
+	\item Using the markings on your optical table, record the distance from the image to the lens. This distance is a fairly accurate measure of the focal length of the lens.  By slightly moving the lens, determine the uncertainty in your measurement\sidenote[][-3em]{To determine the uncertainty of the focal length, move the lens as close to the paper as you can without noticing the image defocussing.  This is your lower bound.  Now move the lens in the opposite direction and find your upper bound.  Your estimated value is in the middle and your uncertainty is (upper bound - lower bound)/2.}. 
+	\item Perform the same task for each lens, recording the observed focal lengths and the uncertainty with which you measure this.
+	\item Identify which lens you will use as an eyepiece or simple magnifier, and which lens will serve as an objective lens for the telescope and which for the microscope objective. Both the telescope and the microscope will utilize the same eyepiece lens.
+\end{enumerate}
+
+\subsection{Activity: Simple magnifier}
+\begin{enumerate}
+	 \item Mount your eyepiece lens and a ruler vertically on the optical bench with a whole number marker at the same height as the center of the lens.  Adjust the distance from the lens to the ruler until its image is in focus and upright when looking through the eyepiece lens.  When moving your eye forward and back, the size of the ruler image should not change.  If it does, you will need to adjust the distance from the lens to the ruler.  
+	 \item Make a sketch of this configuration, being certain to note the distance between the object and the lens, the expected focal length and which number on the ruler is at the same height as the center as the lens.
+	 \item Choose a method for making the angular measurement.  Your instructor may suggest a preferred method otherwise you may use the following method:
+	 \begin{enumerate}
+	 	\item
+			Record the marker on the far ruler that is at the center of the lens.  This is $y_{0}$
+	 	\item
+	 		Mount (or hold) a second ruler vertically next to the lens mount.
+		\item
+			Align your eye such that the marks on both rulers at the center of the lens are aligned and your eye is a known distance from the lens mount.
+		\item
+			Without looking through the lens, pick a point on the far ruler that is close to $y_{0}$ and write down the number.  This is $y_{1}$.
+		\item
+			Read the corresponding point on the near ruler.  This is $y_{2}$.
+		\item
+			Now, maintaining the same distance from the lens to your eye, look through the lens and record the point on the far ruler that corresponds to $y_{2}$ on the near ruler.  This will be $y_{1}^{\prime}$.
+		\item
+			Sketch the right triangle that is created by your eye, $y_{0}$ and $y_{1}$ as well as the projected right triangle created using $y_{1}^{\prime}$.  Note that if you chose $y_{1}$ close to $y_{0}$ we can use the small-angle approximations $\tan\theta=y_{1}/s\approx\theta$ and $\tan\theta^{\prime}= y_{1}^{\prime}/s\approx\theta^{\prime}$.
+		\item
+			Calculate the angular magnification $M=\theta^{\prime}/\theta$.
+	 \end{enumerate}
+	 \item Compare your experimental observations with that predicted from equations in \ref{e:mag}.  Which method has a lower uncertainty?
+\end{enumerate}
+
+\subsection{Activity: Build a telescope}
+% On the optical bench, set up an astronomical telescope. Sight on a distant object (out the window or in the lab) of known or approximate size, and estimate the magnification observed. Compare with results predicted by equation \ref{e:tscope}.
+ 
+\begin{enumerate}
+	\item Mount your eyepiece and objective lens for your telescope on your optical bench. Remember that you need an objective lens with a long focal length for a telescope. The distance between your lenses should be about the sum of their focal lengths.
+	\item Sight your telescope on a distant object (on the other side of the room or outside). You may need to adjust the separation of your lenses to get a good image. 
+	\item Estimate the magnification of the image, and then compare your results with the expected angular magnification, predicted by equation \ref{e:tscope}.
+\end{enumerate}
+
+\subsection{Activity: Build a microscope}
+%On the optical bench, set up a simple microscope. From the known size of the object, and the estimated size of the image seen, find the overall magnification produced. Compare your observed value with that calculated from equation \ref{e:mscope}. Make use of both values of possible magnification for the eyepiece.
+
+\begin{enumerate}
+	\item Mount your eyepiece and objective lens for your microscope on your optical bench. Remember that you need an objective lens with a short focal length for a microscope. The distance between your lenses should be longer than the sum of their focal lengths.
+	\item Sight your microscope on a small object placed near the objective, just outside of the focal length of the objective. The distance scale on your screen is one possible object to start with. Again, estimate the overall magnification for your microscope and compare it with the expected value predicted by equation \ref{e:mscope}.
+\end{enumerate}
+
+\section{Question} 
+The size of the image of Jupiter as seen through a telescope is definitely
+smaller than the actual planet, ($y_{\textrm{image}} < y_{\textrm{object}}$ ), yet we say that the telescope has provided magnification. Explain what is being magnified.
+
+\endinput

@@ -1,0 +1,75 @@
+% !TEX root = 5b-main.tex
+\chapter{The Hydrogen Spectrum}
+
+\section{Purpose}
+	In this lab, you will measure the wavelength of hydrogen spectrum lines.  This exercise will extend your experience in making precise measurements using interference and diffraction effects.
+
+\section{Preparation}
+  Review Chapters 26 and 28 in your textbook.  Pay particular attention to Section 26.6 and 28.2.  Make sure that you are able to solve Example 26.8 and Example 28.5.
+  
+\section{General Information}
+When light is passed through a diffraction grating, it behaves similarly to the double-slit experiment in that you generate interference patterns.  However, a diffraction grating has many, many slits leading to interference patterns that are \textit{strongly} peaked at the constructive interference points.  The equation for this is
+
+\begin{equation} \label{e:nfere} 
+	d\cdot \sin\theta = m\cdot \lambda, \quad m = 0, 1, 2, \dots
+\end {equation}
+
+In our experiment we will observe the first order spectrum; that is, the spectrum for $m = 1$.  You will find a value for $d$ and measure the angles  for the observable spectral lines from a hydrogen discharge tube.  Experimental values of  can then be calculated using \rref{e:nfere}.
+Atomic theory produces the following equation for the wavelengths $\lambda$ of light emitted by hydrogen atoms:
+
+\begin{equation}\label{e:balmer}
+	\frac{1}{\lambda}= R\left(\frac{1}{n_f^2}-\frac{1}{n_i^2}\right)
+\end{equation}
+
+where $R = 1.097 \times 10^7/m$ is the Rydberg constant.  The symbols $n_f$ and $n_i$ are positive integers that represent electron orbits in the hydrogen atom.  If an electron makes a transition between orbits then $n_i$ represents the initial orbit and $n_f$ the final orbit.  For light (EM radiation, actually) to be emitted $n_i$ is greater than $n_f$.  Visible radiation is obtained for orbits that end in the second orbit where $n_f = 2$.  The values of $n_i$ can thus be 3, 4, 5, 6,\dots .  This is called the Balmer series.
+
+\section{Atomic Spectra}
+
+\subsection{Activity: Spectrometer calibration}
+\begin{quote}\hrule
+\textsc{Caution}:  Do not touch the high voltage connections or the discharge tube when the power is on.  The high voltage can shock you and the tube becomes thermally hot and can produce burns.\\[-0.5em]
+\hrule
+\end{quote}
+% Calculate $d$, the separation or distance between slits.
+\begin{enumerate}
+	 \item 	Your grating has a label on it giving the number of lines per centimeter.  From this calculate the value of $d$, the distance between slits.
+	 \item 	The primary function of the spectrometer is to measure the angles at which spectral lines occur.  Your instructor will give you directions for proper adjustment of the spectrometer so that you can obtain the most accurate angle measurements possible.
+	 \item 	Place the grating in the center of the spectrometer with its slits vertical.  The slit of the collimator must also be vertical.  The grating must be perpendicular to the light coming from the collimator.
+	\item Adjust the collimator slit size.  Look directly at the hydrogen discharge tube through the slit of the collimator.  Move the source if it is not directly in the middle of the slit.  Adjust the size of the slit until it is narrow enough to produce narrow spectral lines, but not so narrow as to reduce the intensity of light to the point where it is difficult to see with the eye.
+	\item Align the hydrogen discharge tube with the collimator.
+	
+	\item Place the hydrogen discharge tube in front of the slit of the collimator.  
+	
+	\item Record the zero angle reading of the spectrometer\sidenote[][-3em]{When looking directly at the hydrogen discharge tube, the spectrometer is at 0 degrees according to \rref{e:nfere} above.  Your instructor will help you to adjust the spectrometer so that it reads 0 degrees under this condition.}.
+	
+\end{enumerate}
+
+	
+	
+\subsection{Activity: Measuring spectral lines}
+\begin{enumerate}[resume]
+	\item Examine the scales and vernier for measuring angles.\sidenote{The most difficult part of this lab is to properly measure angles.  Carefully examine the angular scales and the vernier scales on the spectroscope.  Note that you will measure minutes of a degree.  Similar to a clock, there are 60 minutes per degree.}	
+	
+	\item Measure angles for the first order hydrogen spectral lines.
+
+	\clearpage
+	
+	\item Move the telescope to one side and observe the first order spectrum.  You should be able to see three lines easily and perhaps a fourth with some difficulty.  The colors of the lines are red, blue-green, violet, and deep violet.\sidenote{Dimmer lines may not appear to have the proper color since color vision fails for dim light, so the blue-green may appear violet and the violet may look gray.}  Make the cross hairs in the telescope fall in the middle of each line and record the angle observed.
+	\item Repeat the measurement of angles on the opposite side.
+	% Measure and record the angles as above, but on the other side of zero.
+\end{enumerate}
+	
+\subsection{Activity: Calculating spectral lines}
+\begin{enumerate}[resume]
+	\item Calculate the experimental values for the wavelengths
+	
+	Average the two angles obtained for each line and then use \rref{e:nfere} to calculate the wavelength.  Estimate the experimental uncertainties in $d$ and find the total percent uncertainty in each.  Add these percent uncertainties to obtain the total percent uncertainty in your measurements.
+	\item Using \rref{e:balmer}, calculate the theoretical values of the wavelengths of the first four lines in the Balmer series.  These have $n_f$ = 2 and $n_i$ = 3, 4, 5, and 6.
+	\item Calculate the percent difference between your experimental and theoretical values for each of the wavelengths observed. 
+\end{enumerate}
+
+\section{Conclusions}
+Calculate whether your experimental results agree with your .  What could you change to improve the accuracy or precision of your measurements?
+
+
+\endinput

@@ -1,0 +1,84 @@
+% !TEX root = 5b-main.tex
+\chapter{Vision}
+%\setcounter {chapter} {1}
+
+\section{Purpose}
+In this lab, you will explore the process of image formation by the human eye.  We will apply our knowledge of lenses to see how the eye adapts to focus on objects both near and far.  We will also learn how corrective lenses can adjust focus and thereby correct two of the most common vision defects in people: near-sightedness and far-sightedness.
+
+\section{Preparation}
+You should review thin lenses from the previous lab, ensuring that you are completely comfortable with the geometric methods of ray tracing discussed in Section 24.5 of your textbook.  You should read Section 26.3 of your textbook and make sure that you can solve Example 25.4 and Example 25.4.
+
+\section{General Information}
+Your instructor will explain the features and operation of the model eye. Some notable aspects: There are three positions for the retina. When the retina is positioned closest to the cornea, the eye becomes far sighted; in the center position the eye has normal vision and with the retina in the farthest position the eye is nearsighted. 
+
+\begin{marginfigure}
+	\includegraphics{eye.pdf}
+	\caption[Human Eye as a Simple Lens]{\textsc{The Human Eye} acts as a simple lens, focusing distant objects on the back of the retina.  Although the image is inverted, your brain corrects the orientation after the image is acquired.\newline~ \newline \textsc{Viterous Humour} in the eye maintains the shape of the eye, keeping a constant focal length from the cornea and lens to the retina.}
+\end{marginfigure}
+Close and distant vision are accomplished by placing two different lenses inside the eye. The $+7.0D$ lens is for distant vision (totally relaxed eye) and the $-20D$ lens is for close vision (fully accommodated eye).
+
+The thin lens equations can be used for the eye, taking the cornea and internal lens of the eye to be a single thin lens. We will concentrate mainly on the first of those two equations:
+
+\begin{equation}
+	P = \frac{1}{s} + \frac{1}{s^{\prime}}
+\end{equation}
+
+\noindent where $P$ is the dioptric power of the eye, $s$ is the distance to an object and $s^{\prime}$ is the distance to the image. Since it is difficult to determine where a single equivalent lens would be positioned, there is considerable uncertainty in measuring $s$ and $s^{\prime}$. 
+
+The same thin lens equation can be used for a spectacle lens. The total dioptric power of the eye plus spectacle lens is approximately
+	$P_{\textrm{total}} = P_{\textrm{eye}} + P_{\textrm{spect}}$.
+	 
+\section{The Human Eye}
+
+\subsection{Activity: Role of water in the eye}
+\textsc{Aqueous humor} is located immediately behind the cornea and maintains the shape of the cornea.  \textsc{Vitreous humor} fills the main cavity in the eye and helps maintain a consistent distance from the lens to the retina.  They both have indices of refraction of roughly $1.336$.
+\begin{enumerate}
+	\item With the $+7D$ lens in place and the retina in the center position (normal eye, completely relaxed) find the object distance that produces a clear image of the retina with no water in the eye.
+	\item Fill the eye with water leaving the $+7D$ lens in place and find the object distance for which there is a clear image on the retina.
+	\item Discuss the role of fluids in the eye. For example, explain what aspect of the anatomy of the eye (size, shape) necessitates the fluids. 
+	\item Explain what effect these fluids have on the dioptric power of the eye as compared to the eye with no fluids.  Use your knowledge of Snell's Law from the previous lab to explain why this the case.
+\end{enumerate}
+
+\subsection{Activity: Accommodation of the normal eye}
+The normal eye has the retina in the center position.
+\begin{enumerate}
+	\item Determine the lens to retina distance or $s^{\prime}$. \textsc{Note:}  to have a clear image of the retina, $s^{\prime}$ must equal the lens to retina distance.
+	\item Measure (or estimate the case of distant vision) the object distances for the relaxed and accommodated eye. (As stated above, the relaxed eyes has the $+7 D$ lens in place while the accommodated eye has the $-20 D$ lens instead.)
+	\item Calculate the dioptric power of the eye in both cases. That is, calculate the dioptric power of the normal eye for close and distant vision.
+Why must the eye change dioptric power in order to see clearly at different distances?
+\end{enumerate}
+
+\subsection{Activity: Farsightedness}
+Place the retina in the forward position to make the model eye farsighted.  \begin{enumerate}
+	 \item The farsighted eye will need a spectacle lens in front of the cornea to have clear vision of an object at the closest distance found for the normal eye.
+	\item Place an object at the smallest $s$ found for the normal eye above, You will note that it produces a blurry image on the retina. Find a spectacle lens that when placed in front of the cornea gives good close vision.
+	\item Calculate $P_{\textrm{total}}$ the total dioptric power of the corrected eye using measured values of $s$ and $s^{\prime}$ . Then use the dioptric power of the fully accommodated eye found in part 2c and calculate $P_{spec}$ . How does this calculated spectacle power compare to the one that actually corrected the farsightedness of the eye?
+	\item Discuss why a convex or converging lens is needed to correct farsightedness.
+\end{enumerate}
+
+\subsection{Activity: Nearsightedness}
+Place the retina in the far position to make the model eye nearsighted. 
+\begin{enumerate}
+	\item The nearsighted eye will need a spectacle lens in front of the cornea to have clear vision of an object at the farthest distance found for the normal eye
+	\item Point the eye at an object at the largest $s$ found for the normal eye above. You will note that it produces a blurry image on the retina. Find a spectacle lens that when placed in front of the cornea give good distant vision.
+	\item Calculate $P_{total}$ the total dioptric power of the corrected eye using measured values of $s$ and $s^{\prime}$ . Then use the dioptric power of the relaxed eye found in part 2c and calculate $P_{\textrm{spect}}$ . How does this calculated spectacle power compare to the one that actually corrected the nearsightedness of the eye?
+	\item Discuss why a concave or diverging lens is needed to correct nearsightedness
+\end{enumerate}
+
+\subsection{Activity: Role of the pupil size}
+\begin{enumerate}
+	 \item Place the retinal in the center position to return the eye to normal vision. Use the $-20 D$ lens for close vision and place the object to get a clear image on the retina. Insert the diaphragm immediately in front the the $-20 D$ lens and describe its effect on the brightness and sharpness of the image.
+	 \item Why does the diaphragm have this effect?
+\end{enumerate}
+
+\section{Conclusions} 
+\begin{enumerate}
+\item Did your measurements confirm the general aspects of close and distant vision as well as correction of farsightedness and nearsightedness? 
+\item What was the greatest source of experimental uncertainty in this experiment?
+\end{enumerate}
+
+% \clearpage
+%\newpage
+%\includegraphics*[width=\textwidth,trim=120 80 80 120,clip]{5bgraf/pslabgrid} 
+
+\endinput

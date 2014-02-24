@@ -1,0 +1,83 @@
+\documentclass[symmetric,titlepage,justified,marginals=raggedouter]{tufte-book}
+\setcounter{secnumdepth}{0}
+
+\renewcommand*\theequation{\arabic{lab}.\arabic{equation}}
+\renewcommand*\thefigure{\arabic{lab}.\arabic{figure}}
+\renewcommand*\thetable{\arabic{lab}.\arabic{table}}
+
+\newcounter {lab}
+\input{header}
+
+\begin{document}
+
+% Front matter
+\frontmatter
+\input{00-frontmaterial}
+\input{copyright}
+\input{00-titleinside}
+
+%\maketitle
+
+\tableofcontents
+
+\part{Laboratory Experiments}
+
+\mainmatter
+\openepigraph{%
+Textbook references in this manual refer to the Young and Geller ``College Physics'' textbook.  Addenda for the Knight, Jones and Field textbook ``College Physics: A Strategic Approach'' are available from your instructor}{}
+
+\setcounter {lab} {1}
+\input{01-elecstat}
+
+\addtocounter {lab}{1}
+\input{02-efield}
+
+\addtocounter {lab}{1}
+\input{03-energy}
+
+\addtocounter {lab}{1}
+\input{04-dc1}
+
+\addtocounter {lab}{1}
+\input{05-dc2}
+
+\addtocounter {lab}{1}
+\input{06-induction}
+
+\addtocounter {lab}{1}
+\input{07-radiation}
+
+\addtocounter {lab}{1}
+\input{08-reflection}
+
+\addtocounter {lab}{1}
+\input{09-thinlenses}
+
+\addtocounter {lab}{1}
+\input{10-vision}
+
+\addtocounter {lab}{1}
+\input{11-optical-instruments}
+
+\addtocounter {lab}{1}
+\input{12-interference.tex}
+
+\addtocounter {lab}{1}
+\input{13-hydrogen.tex}
+
+\addtocounter {lab}{1}
+\input{14-nuclear.tex}
+
+\begin{fullwidth}
+\part{Appendices}
+\end{fullwidth}
+\backmatter
+%
+%\addtocounter {lab}{1}
+%\input{labnotes.tex}
+
+\addtocounter {lab}{1}
+\input{uncertainties.tex}
+
+
+\end{document}
