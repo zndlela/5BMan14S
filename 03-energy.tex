@@ -37,13 +37,13 @@ Also, do not turn on the current until the heating coil is fully immersed in wat
 
 %---------------------------------------------------------------------
 \section{Theory}
-To calculate the energy needed to heat the system by the calorimetry method we note that the amount of energy needed to increase the temperature of an object is
+To calculate the energy\sidenote{Recall the energy comes in many different forms and can be changed from one form to another.  In this case, we will be changing electrical energy into thermal energy, Q.} needed to heat the system by the calorimetry method we note that the amount of energy needed to increase the temperature of an object is
 \begin{equation} \label{e:qheat1}
 	Q = mc\Delta T 
 \end{equation}
-where $Q$ is the thermal energy\marginnote{Recall the energy comes in many different forms and can be changed from one form to another.  In this case, we will be changing electrical energy into thermal energy} (AKA heat), $m$ is the mass of the object, $c$ is its specific heat, and $\Delta T$ is the change in temperature, $\Delta T =T_2 - T_1$.  Since our system has more than one substance, the energy required is the sum of the energy needed for each substance in the system.
+where $Q$ is the thermal energy (AKA heat), $m$ is the mass of the object, $c$ is its specific heat, and $\Delta T$ is the change in temperature, $\Delta T =T_2 - T_1$.  Since our system has more than one substance, the energy required is the sum of the energy needed for each substance in the system.
 
-In this exercise we heat water in an aluminum cup.   But we also heat the coil of wire, stirrer, thermometer, and part of the lid and connecting rods.  This sounds complicated, but we have already determined that the sum of these other items is equivalent to 6.00 cal/$\degree$C of water.\marginnote{\textsc{Specific heat}, also known as heat capacity is denoted $c$ and measures the amount of energy required to raise the temperature of a mass of material by one degree.  But you can also think of it as the amount of thermal energy a material can hold at a certain temperature.  Low heat capacity materials such as Aluminum can be very hot but still not burn you.  High heat capacity materials such as oil can burn you at much lower temperatures.} Finally, we assume that everything that is heated has the same temperature change.  Therefore, the equation we use to calculate the energy input by the calorimetry method is
+In this exercise we heat water in an aluminum cup.   But we also heat the coil of wire, stirrer, thermometer, and part of the lid and connecting rods.  This sounds complicated, but we have already determined that the sum of these other items is equivalent to 6.00 cal/$\degree$C of water.\sidenote{\textsc{Specific heat}, also known as heat capacity is denoted $c$ and measures the amount of energy required to raise the temperature of a mass of material by one degree.  But you can also think of it as the amount of thermal energy a material can hold at a certain temperature.  Low heat capacity materials such as Aluminum can be very hot but still not burn you.  High heat capacity materials such as oil can burn you at much lower temperatures.} Finally, we assume that everything that is heated has the same temperature change.  Therefore, the equation we use to calculate the energy input by the calorimetry method is
 \begin{equation}\label{e:qheat2}
 	Q = [m_{\textrm{w}}c_{\textrm{w}} + m_{\textrm{Al}}c_{\textrm{Al}} + m_{\textrm{coil}}c_{\textrm{coil}}](T_2 - T_1)
 \end{equation}
@@ -64,7 +64,7 @@ where
 \vspace{12pt}
 
 
-To calculate the electrical energy supplied by the current, $I=q t$ note that the electrical energy, $E = W$ is: %the product of power and time ($E = Pt$), electrical power is the product of current and voltage ($P = IV$), so that electrical energy is:
+To calculate the electrical energy supplied by the current, $I=q/t$ note that the electrical energy, $E = W$ is: %the product of power and time ($E = Pt$), electrical power is the product of current and voltage ($P = IV$), so that electrical energy is:
 
 \begin{equation}
 	\label{e:iheat} E = W = qV = (I\Delta t)V = IV\Delta t
@@ -86,26 +86,26 @@ Apply this to a resistance $R$, the heating coil in our case, the expended energ
 E = W = IV\Delta t = I^2R\Delta t = \frac{V^2\Delta t}{R} 
 \end{equation}
 
-The electrical energy expended is transformed into thermal energy and is commonly called \textit{joule heat} or $I^2 R$ losses, the power or energy expended per unit time.
+The electrical energy expended is transformed into thermal energy and is commonly called \emph{joule heat} or $I^2 R$ losses, the power or energy expended per unit time.
 
 By conservation of energy
 \begin{align} 
 \text{electrical energy expended} & = \text{heat gained} \notag \\
 W & = Q \notag \\
-IVt & = m\,c\Delta t \notag
+IVt & = m\,c\Delta T \notag
 \end{align}
 or
 \begin{equation}
 IV\Delta t = \left(m_{\textrm{w}}c_{\textrm{w}} + m_{\textrm{Al}}c_{\textrm{Al}} + m_{\textrm{coil}}c_{\textrm{coil}}\right)\left(T_2 - T_1\right)
 \end{equation}
 
-Thus in both the calorimetry and the electrical methods you will make calculations of energy based on simple physical measurements.  You will need to keep notes on the measurements to estimate their uncertainties.  The two methods should agree within experimental uncertainties.
+Thus in both the calorimetry and the electrical methods you will make calculations of energy based on simple physical measurements.  You will need to keep notes on the measurements and the instruments to estimate their uncertainties.  The two methods should agree within experimental uncertainties.
 
 %---------------------------------------------------------------------
 \section{Activities}
 Set up the equipment as shown in \fref{f:calorimetry}.  Ask your instructor to check the wiring before proceeding.  Estimate the uncertainty in each measured value and write a brief justification for each estimate. 
 
-\newthought{Perform two separate runs}.  Conduct each step in the next section twice.  Refill the calorimeter using fresh water between runs.
+\newthought{Perform two separate runs}.  Conduct each step in the next section twice.  Refill the calorimeter using fresh water between runs. Be sure to turn off the power supply between runs.
 
 \subsection{Calorimetric and Electrical Measurement}
 
@@ -122,16 +122,30 @@ Prepare to take measurements of the time, temperature, voltage, and current and 
 \begin{marginfigure}[-36pt]
 	\textsc{Your measurement table} should resemble this example:
 	
-	\begin{tabular}{l|l|l|l}
-		Time&Temp&Volt&Current\\		\midrule\addlinespace[-2.25pt]
-		\phantom{x} & \phantom{x}& \phantom{x}& \phantom{x}\\
-		\midrule[0.1pt]\addlinespace[-2pt]
-		\phantom{x} & \phantom{x}& \phantom{x}& \phantom{x}\\
-		\midrule[0.1pt]\addlinespace[-2pt]
-		\phantom{x} & \phantom{x}& \phantom{x}& \phantom{x}\\
-		\midrule[0.1pt]\addlinespace[-2pt]
-		\phantom{x} & \phantom{x}& \phantom{x}& \phantom{x}\\
+%	\begin{tabular}{l|l|l|l}
+%		Time			&Temp			 &Volt			&Current\\		\midrule\addlinespace[-2.25pt]
+%		\phantom{x} & \phantom{x}& \phantom{x}	& \phantom{x}\\
+%		\midrule[0.1pt]\addlinespace[-2pt]
+%		\phantom{x} & \phantom{x}& \phantom{x}	& \phantom{x}\\
+%		\midrule[0.1pt]\addlinespace[-2pt]
+%		\phantom{x} & \phantom{x}& \phantom{x}	& \phantom{x}\\
+%		\midrule[0.1pt]\addlinespace[-2pt]
+%		\phantom{x} & \phantom{x}& \phantom{x}	& \phantom{x}\\
+%	\end{tabular}
+%
+	\begin{tabular}{p{.7cm}|p{.7cm}|p{.7cm}|p{.9cm}}
+		Time			&Temp			 &Volt			&Current\\[0.4ex]	
+		\hline
+		 & & 	& \\
+		\hline
+		& & 	&\\
+		\hline 
+		& & 	&\\
+		\hline 
+		& & 	&\\
+		\hline
 	\end{tabular}
+%	
 \end{marginfigure}
 
 \item
@@ -151,8 +165,17 @@ Make a graph of temperature on the $y$-axis against time on the $x$-axis.  When 
 \textsc{Electrical Energy Method}  Use \rref{e:iheat} to compute the electrical energy (in Joules) lost by the electrical system.
 
 \item
-Now, compute the ratio of the electrical energy to the thermal energy.  This will give you an ``electrical equivalent of heat'' in $J/cal$ or $J/kcal$\marginnote{There are multiple standards when converting from Joules to calories.  If you are dealing with chemical energy (e.g. calories in food), the World Health Organization uses 1~cal=4.184~J.  For our use, however, it is more appropriate to use the International Standards Organization (ISO) value for electrical energy required to raise 1 gram of water from 14.5\degree C to 15.5\degree C.  This value is 1~cal = 4.186~J}. Compare the result to the accepted value of the mechanical equivalent of heat by comparing the percent uncertainty or percent error, given by
-\[ \frac{|Expt. - Std. value|}{Std. value} \times 100\% \]
+Now, compute the ratio of the electrical energy E, from Eqn.~\ref{e:iheat} to the thermal energy Q, from Eqn.~\ref{e:qheat2}.  This will give you an ``experimental value for the mechanical equivalent of heat''.
+%``electrical equivalent of heat''
+
+Compare the result to the accepted standard value, \SI{4.186}{J/cal} for the mechanical equivalent of heat 
+\sidenote{There are multiple standards when converting from Joules to calories.  If you are dealing with chemical energy (e.g. calories in food), the World Health Organization uses 1~cal=4.184~J.  For our use, however, it is more appropriate to use the International Standards Organization (ISO) value for electrical energy required to raise 1 gram of water from 14.5\degree C to 15.5\degree C.  This value is 1~cal = 4.186~J.} 
+in $J/cal$ or $kJ/kcal$ by computing the percent error, given by
+\[ \frac{|Expt. - Std. value|}{Std. value} \times 100\%. \]
+
+\item Compare the percent difference between the two runs. Be sure to convert the thernal energy in cal to thermal energy in Joules.
+\[ \frac{|E - Q|}{\frac{1}{2}(E+Q)} \times 100\%. \]
+
 \end{enumerate}
 
 %Find the percent difference between the two calculations and discuss whether they agree within estimated experimental uncertainties.
@@ -160,10 +183,11 @@ Now, compute the ratio of the electrical energy to the thermal energy.  This wil
 %---------------------------------------------------------------------
 \section{Questions}
 \begin{enumerate}
-	\item Estimate the experimental uncertainties in reading the voltmeter, ammeter, thermometer, and the balance scale.  Refer to the appendix in this manual for methods of accomplishing this. 
+	\item Estimate the experimental or instrumental uncertainties \marginnote{\[ \frac{\delta V}{V}, \frac{\delta I}{I}, \frac{\delta T}{T}, \frac{\delta m}{m}. \] The $\delta$'s are uncertainties not changes.}
+in reading the voltmeter, ammeter, thermometer, and the balance scale.  Refer to the appendix in this manual for methods of accomplishing this. 
 	\item For a constant current, $I$, how is the joule heat related to the resistance of the heating coil?
 	\item Which method (calorimetry or electric) do you believe is inherently more precise?  Why is this so?  Can you justify this using the uncertainty calculations from question 1?
 	\item What do your graphs of temperature versus time from step 6 tell you about the assumption that the energy put into the system is retained as thermal energy?
-	\item If the cost of electricity were \$0.12 per kWh, what is the cost of electricity in cents per kJ used for this experiment\sidenote{Remember: 1 Watt = 1 Joule per second}
+	\item If the cost of electricity were \$0.12 per kWh, what is the cost of electricity in cents per kJ used for this experiment\sidenote[][-0.45cm]{Remember: 1 Watt = 1 Joule per second}. % 0.2in
 \end{enumerate}
 
