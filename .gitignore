@@ -47,4 +47,6 @@
 Backup[ ]of[ ]*.pages/ 
 Backup[ ]of[ ]*.key/ 
 Backup[ ]of[ ]*.numbers/ 
+5bgraf/
+graphics/
 .DS_Store
