@@ -5,7 +5,8 @@
 \section {Purpose}  
 In this lab, you will explore the internal resistance of a battery.  In the first section, you will directly measure an estimate of the internal resistance.  In the second section, you will analyze a more complex circuit, applying Kirchoff's rules to determine current in three sections of the circuit.  By using these rules, you will be able to compare multiple ways of determining terminal voltage, circuit current and effective resistance.
 
-\section {Preparation} Read Section 19.6 of your textbook thoroughly.  Be sure that you can solve Example 19.11 in your textbook.
+%\section {Preparation} Read Section 19.6 of your textbook thoroughly.  Be sure that you can solve Example 19.11 in your textbook.
+\section{Preparation} Read the sections in your text involving DC circuits, and Kirchoff's Voltage and Current Rules.
 
 \paragraph {Short quiz}  Be prepared to take a short quiz at the beginning of lab related to Kirchoff's rules, terminal voltage and parallel circuits.
 
@@ -27,22 +28,24 @@ In this lab, you will explore the internal resistance of a battery.  In the firs
 
 \begin{marginfigure}
 	\centering
-	\includegraphics[width=0.9\linewidth]{InternalResistance.pdf}
+	\includegraphics[width=0.8\linewidth]{AmmeterVoltmeter}%{InternalResistance.pdf}
 	\caption{Setup to measure internal resistance of a battery}
+%	place the voltmeter across the resistor
 	\label{f:vimtr}
 \end{marginfigure}
 
 \subsection{Activity: Internal resistance of a battery}
 \begin{enumerate}
-	\item Measure the emf of each battery by connecting the battery directly to the voltmeter.
-	\item Measure the actual resistances of the three precision resistors with the ohmmter.
-	 \item Set up the circuit shown in \fref{f:vimtr}.  Use a precision resistor for $R$, and estimate the current that will flow so that you can choose an appropriate scale for the ammeter.
+	\item Measure the emf of each battery by connecting the battery directly to the voltmeter. (You only need to touch the ends of the voltmeter to the terminals of the the battery.)
+	\item Measure the resistances of the three resistors with the ohmmeter.
+	\item Set up the circuit shown in \fref{f:vimtr}. \todo{This figure replaced one that had voltmeter across the battery} Use a precision resistor for $R$, and estimate the current that will flow so that you can choose an appropriate scale for the ammeter.
 	\item Measure and record the current and terminal voltage as accurately as possible. The terminal voltage is defined below with $V_T$ = the terminal voltage, $E$ = the $emf$, $I$ = the current, and $r$ = the internal resistance.
 \begin{equation} \label{e:vterm}
 	V_T  =  E -Ir 	%\quad \text{with E = emf voltage}	
 \end{equation}
 	\item Replace the precision resistor with one having a different resistance (be sure to measure its actual resistance with an ohmmeter) and repeat the measurements of current and terminal voltage.
-	\item Calculate the internal resistance $r$ of the battery for each measurement using the previously measured emf of the battery.  Verify that the internal resistance actually varies with load.
+	\item Calculate the internal resistance $r$ of the battery for each measurement using the previously measured emf of the battery. \[ r = \frac{E - V_T}{I} \]  Verify that the internal resistance actually varies with load, i.e. the value of the resistor in the circuit.
+	\item Plot the measured voltage value vs. current for each resistor, including the \emph{emf} voltage when there is no current. The slope of the line gives a reasonable value for the internal resistance of the battery.
 	\item Discuss these results and your observations regarding the internal resistance of your battery in your lab report.
 \end{enumerate}
 
@@ -50,7 +53,6 @@ In this lab, you will explore the internal resistance of a battery.  In the firs
 \begin{figure}
 	\centering
 	\label{f:kvlr3}
-	
 	\begin{tikzpicture}[x=0.65in,y=0.65in]
 	  \draw
 	    (0,0) node[anchor=east](start){A} to[short,*-,i^>=$I_2$] ++(1.5,0)
@@ -84,7 +86,9 @@ In this lab, you will explore the internal resistance of a battery.  In the firs
 	\item Measure the terminal voltages of your batteries with both tap keys held down.
 	\item Using the block diagram of \fref{f:circboard} as a guide, measure the currents $I_1$, $I_2$, and $I_3$, --- remove the appropriate wire, insert the ammeter, then measure the current.
 	\item Apply Kirchhoff's junction rule to junction $A$ and Kirchhoff's loop rule to the top and bottom loop.  Enter the values of the currents, resistances, and voltages for this circuit into each equation.  Are the rules verified by your values? Discuss your results.
-	\item Solve the three equations obtained from the application of Kirchhoff's rules for the currents $I_1$, $I_2$, and $I_3$, treating them as unknowns. (Your instructor can provide some guidance in how to solve three equations for three unknowns.)
+
+	\item Solve \sidenote{One set of solutions is included at the end.} the three equations obtained from the application of Kirchhoff's rules for the currents $I_1$, $I_2$, and $I_3$, treating them as unknowns. (Your instructor can provide some guidance in how to solve three equations for three unknowns.)
+
 	\item Now calculate the currents using the known values of the resistances and voltages.  Compare the calculated values of the currents to the measured values and discuss how well they agree. 
 \end{enumerate}
 
@@ -94,15 +98,28 @@ In this lab, you will explore the internal resistance of a battery.  In the firs
 	\includegraphics[width=0.8\textwidth]{5bgraf/Exp_5_DC2_circuitboard}
 	\caption{Circuit board arrangement for implementing \fref{f:kvlr3} to measure currents $I_{1}$ (top loop), $I_{2}$ (middle connection) and $I_{3}$ (bottom loop).  Study this diagram and \fref{f:kvlr3} to determine where the junction points are located.  In \fref{f:kvlr3}, they are labeled $A$-$F$. }
 \end{figure}
-\clearpage
+%\clearpage
 
 \section {Conclusions}
 \begin{enumerate}
 	\item  What general conclusions can you make concerning the internal resistance of batteries?  
 	\item What happens to the voltage lost to internal resistance?  
-	\item What two conservation principles are used by Kirchhoff's rules?\sidenote{Textbook, Section 19.6}  
+	\item What two conservation principles are used by Kirchhoff's rules?
+%	\sidenote{Textbook, Section 19.6}  
 	\item What is the difference between conserving these two quantities?
 \end{enumerate}
+
+\vskip5pt \hrule
+\bigskip
+One set of solutions to the circuit follows.
+
+\[ I_1 = \frac{E_1(R_2 +R_3) - E_2R_2}{R_1R_2 + R_1R_3 + R_2R_3}  \]
+
+\[ I_2 = \frac{E_1R_3 + E_2R_1}{R_1R_2 + R_1R_3 + R_2R_3}  \]
+
+\[ I_3 = \frac{E_2(R_1 +R_2) - E_12_2}{R_1R_2 + R_1R_3 + R_2R_3}  \]
+
+Compare these results with your measured values.
 
 %--begin comment---------------------------------------------------------
 %\begin{comment}

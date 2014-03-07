@@ -39,13 +39,17 @@
 %%
 % For graphics / images
 \usepackage{graphicx}
-\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
-\graphicspath{{graphics/}{images/}}
+	\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+	\graphicspath{{graphics/}{images/}}
 
 % The fancyvrb package lets us customize the formatting of verbatim
 % environments.  We use a slightly smaller font.
 \usepackage{fancyvrb}
-\fvset{fontsize=\normalsize}
+	\fvset{fontsize=\normalsize}
+
+\usepackage[textsize=footnotesize, % place todonote items in text
+%	disable	% prevent display of all notes
+	]{todonotes}
 
 % Prints the month name (e.g., January) and the year (e.g., 2008)
 \newcommand{\monthyear}{%
