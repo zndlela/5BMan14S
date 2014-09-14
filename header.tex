@@ -1,5 +1,7 @@
 %!TEX root = 5b-main.tex
 
+% tufte-book loads hyperref with its own options
+
 \IfFileExists{bergamo.sty}{\usepackage[osf]{bergamo}}{}% Bembo
 \IfFileExists{chantill.sty}{\usepackage{chantill}}{}% Gill Sans
 
@@ -47,9 +49,18 @@
 \usepackage{fancyvrb}
 	\fvset{fontsize=\normalsize}
 
+% todo notes and short comments
 \usepackage[textsize=footnotesize, % place todonote items in text
+%	background color=green,
 %	disable	% prevent display of all notes
-	]{todonotes}
+]{todonotes}
+% syntax: 
+%  \todo{inserts a plain todo note}
+%  \todo[color=blue!40]{inserts note colored 40 % blue.}
+%  \todo[nolist]{show note in margin, but not in list of todos.}
+%  \todo[size=\small, color=green!40]{A note with a small fontsize, colored 40% green.}
+%  \todo[inline]{place note on its own line}
+%  \todo[noline]{note in margin, does not point to text.}
 
 % Prints the month name (e.g., January) and the year (e.g., 2008)
 \newcommand{\monthyear}{%
