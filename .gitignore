@@ -33,6 +33,7 @@
 *.snm
 *.summ
 *.synctex.gz
+*.synctex.gz(busy)
 *.tcp
 *.tdo
 *.tmp
