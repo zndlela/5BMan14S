@@ -78,11 +78,11 @@ These activities center on measuring resistance using three different methods. (
 \end{marginfigure}
 
 %\subsection{Activity: Ohm's Law} \label{s:ohmlaw}
-\subsection{Direct Measurement of Resistance} \label{s:directmsr}
+\subsection{Direct Reading and Measurement of Resistance} \label{s:directmsr}
 \begin{enumerate}
-	\item Determine the ``nominal'' or standard value for each resistor by noting and writing down its color code. Label each resistor, such as $R_1, R_2, R_3$
+	\item Determine the ``nominal'' or standard value for each resistor by noting and writing down its color code. Label each resistor, such as $R_1, R_2, R_3$.
 	\item \label{l:mm} Determine the individual resistance for each of the three resistors using the multimeter as indicated in \fref{f:mohm}.
-	\item Calculate the ``nominal'' or standard value for the resistors in series from the color code value. $R_S = R_1 + R_2 + R_3$
+	\item Calculate the ``nominal'' or standard value for the resistors in series from the color code value. $R_S = R_1 + R_2 + R_3$.
 	\item Measure the three resistors in series using the ohmmeter as shown in Fig. \ref{f:resistor-series-par}.
 	\item Calculate the ``nominal'' or standard value for the resistors in parallel from the color code value. $R_P  =  \left( 1/R_1  +  1/R_2  +  1/R_3 \right)^{-1}$
 	\item Measure the three resistors in parallel using the ohmmeter as shown in Fig. \ref{f:resistor-series-par}.
@@ -121,8 +121,8 @@ These activities center on measuring resistance using three different methods. (
 %	\item Once you have measured the voltage and current for each resistor separately, calculate the equivalent series resistance $R_S$ using \rref{e:ohm}.
 	\item Measure the voltage separately across each resistor in the series circuit. The current through each resistor is the same. Then calculate the equivalent series resistance $R_S$ using \rref{e:ohm}. (Also verify whether the sum of the voltages across each resistor equals the total voltage supplied to the circuit.)
 	\item Determine the experimental uncertainty in the value of $R_S$. %found in item \ref{l:eqs}.
-	\[ \delta R \sim R_S\left( \frac{\delta V}{V} + \frac{\delta I}{I} \right). \] 
-	The $\delta$'s are uncertainties \todo{Uncertainty via fractional uncertainties. Is this too much?} in the measured values, not changes or differences.
+	\[ \delta R_{S} \sim \left( \frac{\delta V}{V} + \frac{\delta I}{I} \right). \] 
+	The $\delta$'s are uncertainties \todo{Uncertainty via fractional uncertainties. Is this asking too much?} in the measured values, not changes or differences.
 	
 	\item Calculate the equivalent resistance $R_S$ using (\rref{e:ser}) where the individual resistances are those found by the Ohm's law method. %in item \ref{l:olm}.
 \end{enumerate}
@@ -137,8 +137,9 @@ These activities center on measuring resistance using three different methods. (
 
 	\item Once you have measured the voltage and current, calculate the equivalent parallel resistance $R_P$ using \rref{e:par}.
 	
-	\item Determine the experimental uncertainty in the value of $R_P$. \marginnote{$\delta R \sim R_P\left( \frac{\delta V}{V} + \frac{\delta I}{I} \right)$.}
-
+	\item Determine the experimental uncertainty in the value of $R_P$. 
+	\[ \delta R_{p} \sim \left( \frac{\delta V}{V} + \frac{\delta I}{I} \right). \]
+	\todo{Uncertainty via fractional uncertainties for parallel resistors.}
 \end{enumerate}
 
 %\begin{marginfigure}
